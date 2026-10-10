@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this development software snapshot; no accepted paper or DOI is claimed."
+type: software
+title: "EQUAL-RAG: Evidence-aware Post-training Research Snapshot"
+authors:
+  - name: "Jjil11"
+repository-code: "https://github.com/Jjil11/EQUAL-RAG"
+version: "0.1.0-dev"
+date-released: "2026-10-11"
+abstract: "Research implementations and aggregate development results for evidence coverage, completion repair and self-termination in retrieval-augmented language generation."
+keywords:
+  - retrieval-augmented generation
+  - evidence coverage
+  - efficient generation
+  - post-training

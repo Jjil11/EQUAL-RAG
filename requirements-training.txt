@@ -1,0 +1,12 @@
+# Major model-stack versions observed in the completed Linux experiment.
+# Install an appropriate CUDA PyTorch wheel for your platform separately if needed.
+torch==2.7.1
+transformers==4.57.3
+peft==0.18.0
+numpy>=1.26,<3
+safetensors>=0.4
+accelerate>=1.0
+sentencepiece>=0.2
+protobuf>=4
+huggingface_hub>=0.34,<1.0
+# This is not a complete transitive lockfile; see docs/REPRODUCIBILITY.md.

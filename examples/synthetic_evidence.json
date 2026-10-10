@@ -1,0 +1,18 @@
+{
+  "notice": "Synthetic compiler/metric fixture only, not benchmark data or model-generated evidence.",
+  "row": {
+    "id": "synthetic-001",
+    "prompt": "List the two synthetic labels and cite their documents.",
+    "edges": [
+      {"answer": "Alpha", "aliases": ["Alpha"], "doc_id": 1},
+      {"answer": "Beta", "aliases": ["Beta"], "doc_id": 2}
+    ],
+    "all_gold_answers": [["Alpha"], ["Beta"]],
+    "trajectory_prefix": "Alpha [1]",
+    "trajectory_continuation": ", Alpha [1]"
+  },
+  "complete_response": "Alpha [1], Beta [2]",
+  "incomplete_response": "Alpha [1]",
+  "wrong_citation_response": "Alpha [2], Beta [2]",
+  "repeated_response": "Alpha [1], Beta [2], Alpha [1]"
+}

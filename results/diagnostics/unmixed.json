@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_TRAIN_ONLY_UNMIXED_DIAGNOSTIC",
+  "n": 72,
+  "checkpoint": "action_pair/train/adapter before fixed interpolation",
+  "eos_argmax_count": 0,
+  "mean_eos_probability": 4.369635825067034e-05,
+  "compiled_sha256": "cbcf5dce1fbfa74bb75142fb9460c784d60ee891e231d6ad03b5b4e520c1d156",
+  "model_generations": 0,
+  "heldout_or_development_rows_read": 0,
+  "warning": "Diagnostic only: not selecting interpolation or evaluating another variant on development; do not promote to method result."
+}

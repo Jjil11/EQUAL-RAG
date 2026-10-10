@@ -1,0 +1,110 @@
+{
+  "status": "COMPLETE_TRAINING_SITE_DIAGNOSTIC",
+  "n_training_rows": 150,
+  "model_forwards": 1200,
+  "development_or_holdout_rows_read": 0,
+  "compiled_sha256": "cbcf5dce1fbfa74bb75142fb9460c784d60ee891e231d6ad03b5b4e520c1d156",
+  "warnings": [
+    "Teacher-forced training sites, not held-out rollout success or independent statistical evidence.",
+    "72 original train stop prefixes, 78 teacher-forced completions; no independent generalization evidence.",
+    "Probability/class mass alone does not guarantee greedy termination. Native first and terminal share 72 contexts: 288 redundant forwards across four models."
+  ],
+  "arms": {
+    "baseline": {
+      "n": 150,
+      "first_legal_argmax_count": 1,
+      "terminal_eos_argmax_count": 2,
+      "by_target_action": {
+        "stop": {
+          "n": 75,
+          "first_legal_argmax_count": 0,
+          "terminal_eos_argmax_count": 0
+        },
+        "complete_then_stop": {
+          "n": 75,
+          "first_legal_argmax_count": 1,
+          "terminal_eos_argmax_count": 2
+        }
+      },
+      "native_stop": {
+        "n": 72,
+        "eos_argmax_count": 0,
+        "mean_eos_probability": 1.1251895121406133e-06
+      },
+      "mean_terminal_eos_probability": 0.014974395346604776,
+      "sha256": "78ea7e29b53e426108aed602b87ab8e5781ed33746eb42272db109a5724389c7"
+    },
+    "action_pair": {
+      "n": 150,
+      "first_legal_argmax_count": 11,
+      "terminal_eos_argmax_count": 61,
+      "by_target_action": {
+        "stop": {
+          "n": 75,
+          "first_legal_argmax_count": 0,
+          "terminal_eos_argmax_count": 2
+        },
+        "complete_then_stop": {
+          "n": 75,
+          "first_legal_argmax_count": 11,
+          "terminal_eos_argmax_count": 59
+        }
+      },
+      "native_stop": {
+        "n": 72,
+        "eos_argmax_count": 0,
+        "mean_eos_probability": 9.714391218271686e-06
+      },
+      "mean_terminal_eos_probability": 0.3891932572908766,
+      "sha256": "c2e8dc292f9434efcd784d08e9eafd0a61776a8aa3a5106ea4df043ef2f64176"
+    },
+    "action_ul": {
+      "n": 150,
+      "first_legal_argmax_count": 10,
+      "terminal_eos_argmax_count": 65,
+      "by_target_action": {
+        "stop": {
+          "n": 75,
+          "first_legal_argmax_count": 0,
+          "terminal_eos_argmax_count": 2
+        },
+        "complete_then_stop": {
+          "n": 75,
+          "first_legal_argmax_count": 10,
+          "terminal_eos_argmax_count": 63
+        }
+      },
+      "native_stop": {
+        "n": 72,
+        "eos_argmax_count": 0,
+        "mean_eos_probability": 8.562230369730003e-06
+      },
+      "mean_terminal_eos_probability": 0.4049166982317443,
+      "sha256": "7d04c47211bfb48aa98d951e667f53b1ebd5dd995606fc169848cb5547798e0d"
+    },
+    "action_ce": {
+      "n": 150,
+      "first_legal_argmax_count": 8,
+      "terminal_eos_argmax_count": 65,
+      "by_target_action": {
+        "stop": {
+          "n": 75,
+          "first_legal_argmax_count": 0,
+          "terminal_eos_argmax_count": 2
+        },
+        "complete_then_stop": {
+          "n": 75,
+          "first_legal_argmax_count": 8,
+          "terminal_eos_argmax_count": 63
+        }
+      },
+      "native_stop": {
+        "n": 72,
+        "eos_argmax_count": 0,
+        "mean_eos_probability": 8.679955176280526e-06
+      },
+      "mean_terminal_eos_probability": 0.4011377499058134,
+      "sha256": "0ecff22afd6c6b93307fcf8e80ce0eed15acb3c1145cee915e8d58f773e4ec34"
+    }
+  }
+}

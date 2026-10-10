@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_SMALL_SINGLE_GPU_ABBA_REPLAY",
+  "timed_generations": 64,
+  "warmup_generations": 4,
+  "unique_development_questions": 16,
+  "holdout_predictions": 0,
+  "all_exact_reference_ids_match": true,
+  "settings": {
+    "regression_dev": {
+      "n": 8,
+      "mean_seconds": {
+        "baseline": 2.541807179659372,
+        "action_pair": 2.7441251801210456
+      },
+      "relative_latency_change": 0.07959612439555142,
+      "relative_ci95": [
+        0.015184341822759469,
+        0.1550067089746694
+      ]
+    },
+    "prospective_dev": {
+      "n": 8,
+      "mean_seconds": {
+        "baseline": 3.1825143215828575,
+        "action_pair": 5.408253631379921
+      },
+      "relative_latency_change": 0.6993650569622789,
+      "relative_ci95": [
+        -0.03604893648993879,
+        2.0918591826013895
+      ]
+    }
+  },
+  "warnings": [
+    "Small reused development subset, two repetitions; not production throughput or reliable tail latency.",
+    "Generation timer excludes CPU tokenization, model loading and retrieval; includes prefill+decode with CUDA synchronization.",
+    "No exclusive whole-server reservation, other GPUs active; ABBA reduces but does not eliminate time/thermal effects.",
+    "No training amortization or energy claim. Word/token reduction alone does not imply acceleration."
+  ]
+}

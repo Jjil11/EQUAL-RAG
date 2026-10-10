@@ -1,0 +1,2 @@
+# Only required for CPU metric/compiler unit checks. Viewer/verifier use stdlib.
+numpy>=1.26,<3

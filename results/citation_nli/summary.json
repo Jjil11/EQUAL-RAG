@@ -1,0 +1,297 @@
+{
+  "status": "COMPLETE_AUTOMATIC_NLI_SCREEN",
+  "judge": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "max_length": 512,
+  "decision": "entailment argmax, fixed before scoring; no tuned threshold",
+  "toy_controls_passed": 6,
+  "unique_nli_pairs": 943,
+  "truncated_pairs": 0,
+  "predictions_screened": 1120,
+  "holdout_predictions": 0,
+  "human_annotations": 0,
+  "input_sha256": {
+    "runs/submission_20261010/qwen3_frozen_comparison/regression_dev/baseline/eval_results.jsonl": "4b5f7231c2a934564b7948c2c5438b4a53b50540874889a77fc1eba7f2d35a8f",
+    "runs/submission_20261010/qwen3_frozen_comparison/prospective_dev/baseline/eval_results.jsonl": "aa120cd1c700c5245e049dbcf8b0a0fbbef855b048a4dfc7d85e71d43df999fd",
+    "runs/qwen_retrieval_align_20261010/foundation/regression_dev/eval_results.jsonl": "aaadc0c5a5eaec37512f514e45c0ea05fa364ba7bf87b805c65eb2543ec5781e",
+    "runs/qwen_retrieval_align_20261010/foundation/prospective_dev/eval_results.jsonl": "ee1dd55d77426cc77a6b2beed7712ec01f8ceeb1aeca71b6aefbb689fa011f4e",
+    "runs/qwen_clean_labels_20261010/action_pair/regression_dev/eval_results.jsonl": "389f8841ec76a50c0a5bda679bab2c222dc1f0100a7fb1bd1f06acecf0ebceff",
+    "runs/qwen_clean_labels_20261010/action_pair/prospective_dev/eval_results.jsonl": "7ce2b780308a9873d8faf6cb2a47d06f9776c1c1719c5afbff41f738001c6490",
+    "runs/qwen_terminal_bridge_20261010/action_pair/regression_dev/eval_results.jsonl": "8010b94359a6f1fd9c9939576ad07f10638fb6f82c08df82aa50bec7e5ad1024",
+    "runs/qwen_terminal_bridge_20261010/action_pair/prospective_dev/eval_results.jsonl": "7b9df21bf7b07ab4f2c5eb61c69ff3c8e67976be9656e0c221a69580c9c5abc7",
+    "runs/qwen_native_consistent_20261010/action_pair/regression_dev/eval_results.jsonl": "7f2229f32630c6b9ab129ade09d563d66723d5481843737f27ccb39f4961cec0",
+    "runs/qwen_native_consistent_20261010/action_pair/prospective_dev/eval_results.jsonl": "0231495beb2dbd59ef25ab8ba14d78ea8a56b9422fe497de5a90be0922cf61d8",
+    "runs/qwen_native_consistent_20261010/action_ce/regression_dev/eval_results.jsonl": "db1781a1992b573d2f2a481dbedea62f577d6c71bd968fefa39a0e1401426849",
+    "runs/qwen_native_consistent_20261010/action_ce/prospective_dev/eval_results.jsonl": "b1a955efb603829c0ec848dc2d19707014ca7b09deff9c3c158e5335eab2d9c3",
+    "runs/qwen_native_consistent_20261010/action_ul/regression_dev/eval_results.jsonl": "e28d6ad35334f3770c7e234a962de8dfe5a59b98e70b8526de2d252b5a2b74f6",
+    "runs/qwen_native_consistent_20261010/action_ul/prospective_dev/eval_results.jsonl": "cfc47880533f6004968c78dcdda034f03a6be5ad1b5e857c94affdc292d988c2"
+  },
+  "table": {
+    "regression_dev": {
+      "baseline": {
+        "citation_support_rate": 0.6593328544491335,
+        "citation_precision_screen": 0.6629067460317459
+      },
+      "foundation": {
+        "citation_support_rate": 0.025208333333333333,
+        "citation_precision_screen": 0.0875
+      },
+      "clean_pair": {
+        "citation_support_rate": 0.6454618457743457,
+        "citation_precision_screen": 0.6486210317460317
+      },
+      "bridge_pair": {
+        "citation_support_rate": 0.65599756006006,
+        "citation_precision_screen": 0.659156746031746
+      },
+      "action_pair": {
+        "citation_support_rate": 0.6517118457743458,
+        "citation_precision_screen": 0.6548710317460318
+      },
+      "action_ce": {
+        "citation_support_rate": 0.6547693623856414,
+        "citation_precision_screen": 0.6582192460317461
+      },
+      "action_ul": {
+        "citation_support_rate": 0.6520045045045045,
+        "citation_precision_screen": 0.6552876984126984
+      }
+    },
+    "prospective_dev": {
+      "baseline": {
+        "citation_support_rate": 0.4117303228246104,
+        "citation_precision_screen": 0.41616133268138056
+      },
+      "foundation": {
+        "citation_support_rate": 0.01281001984126984,
+        "citation_precision_screen": 0.04895833333333333
+      },
+      "clean_pair": {
+        "citation_support_rate": 0.4166198119834224,
+        "citation_precision_screen": 0.4215358748059227
+      },
+      "bridge_pair": {
+        "citation_support_rate": 0.429162744217413,
+        "citation_precision_screen": 0.43529504565417465
+      },
+      "action_pair": {
+        "citation_support_rate": 0.4154822475319899,
+        "citation_precision_screen": 0.42041167038930755
+      },
+      "action_ce": {
+        "citation_support_rate": 0.43331365358032914,
+        "citation_precision_screen": 0.4385030778229032
+      },
+      "action_ul": {
+        "citation_support_rate": 0.4144433512913367,
+        "citation_precision_screen": 0.4201022078595333
+      }
+    }
+  },
+  "comparisons": {
+    "regression_dev": {
+      "baseline": {
+        "citation_support_rate": {
+          "delta": -0.007621008674787743,
+          "ci95": [
+            -0.023638444767441858,
+            0.0031946924603174385
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.008035714285714285,
+          "ci95": [
+            -0.024063616071428574,
+            0.0026785714285714286
+          ]
+        }
+      },
+      "action_ce": {
+        "citation_support_rate": {
+          "delta": -0.0030575166112956813,
+          "ci95": [
+            -0.011449335548172757,
+            0.004308554817275748
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.0033482142857142864,
+          "ci95": [
+            -0.011696428571428573,
+            0.004062499999999999
+          ]
+        }
+      },
+      "action_ul": {
+        "citation_support_rate": {
+          "delta": -0.0002926587301587312,
+          "ci95": [
+            -0.00822420634920635,
+            0.007445436507936507
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.0004166666666666673,
+          "ci95": [
+            -0.008348214285714285,
+            0.007321428571428571
+          ]
+        }
+      },
+      "clean_pair": {
+        "citation_support_rate": {
+          "delta": 0.006249999999999999,
+          "ci95": [
+            -0.004732142857142857,
+            0.018958333333333334
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": 0.006249999999999999,
+          "ci95": [
+            -0.004732142857142857,
+            0.018958333333333334
+          ]
+        }
+      },
+      "bridge_pair": {
+        "citation_support_rate": {
+          "delta": -0.004285714285714287,
+          "ci95": [
+            -0.012366071428571431,
+            0.0025446428571428556
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.004285714285714287,
+          "ci95": [
+            -0.012366071428571431,
+            0.0025446428571428556
+          ]
+        }
+      },
+      "foundation": {
+        "citation_support_rate": {
+          "delta": 0.6265035124410124,
+          "ci95": [
+            0.5451255362505364,
+            0.7059384082743457
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": 0.5673710317460318,
+          "ci95": [
+            0.47459040178571416,
+            0.6576343005952381
+          ]
+        }
+      }
+    },
+    "prospective_dev": {
+      "baseline": {
+        "citation_support_rate": {
+          "delta": 0.0037519247073795657,
+          "ci95": [
+            -0.016359373109031107,
+            0.03272911451317531
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": 0.004250337707926996,
+          "ci95": [
+            -0.01596607002868163,
+            0.03397724765314046
+          ]
+        }
+      },
+      "action_ce": {
+        "citation_support_rate": {
+          "delta": -0.017831406048339188,
+          "ci95": [
+            -0.04598644449625552,
+            0.0018751832112569589
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.018091407433595674,
+          "ci95": [
+            -0.0469764852124741,
+            0.0019050669242831276
+          ]
+        }
+      },
+      "action_ul": {
+        "citation_support_rate": {
+          "delta": 0.001038896240653253,
+          "ci95": [
+            -0.03171683482819288,
+            0.034954536290048875
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": 0.0003094625297742893,
+          "ci95": [
+            -0.033422188337046924,
+            0.03506942775106826
+          ]
+        }
+      },
+      "clean_pair": {
+        "citation_support_rate": {
+          "delta": -0.0011375644514324394,
+          "ci95": [
+            -0.027414394969580494,
+            0.030762678928601007
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.0011242044166151302,
+          "ci95": [
+            -0.027466716350365905,
+            0.03144953158820345
+          ]
+        }
+      },
+      "bridge_pair": {
+        "citation_support_rate": {
+          "delta": -0.013680496685423042,
+          "ci95": [
+            -0.038328240095321923,
+            0.0031771151519184014
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": -0.01488337526486705,
+          "ci95": [
+            -0.0403067213240498,
+            0.002304407971620648
+          ]
+        }
+      },
+      "foundation": {
+        "citation_support_rate": {
+          "delta": 0.4026722276907201,
+          "ci95": [
+            0.3203507254636119,
+            0.4850523579741531
+          ]
+        },
+        "citation_precision_screen": {
+          "delta": 0.37145333705597416,
+          "ci95": [
+            0.27759855960750246,
+            0.46307002898594535
+          ]
+        }
+      }
+    }
+  },
+  "warnings": [
+    "Exploratory DeBERTa screen, NOT official T5-XXL AutoAIS, not benchmark leaderboard.",
+    "Question+answer claim and comma units follow ALCE-style convention; not validated decontextualization.",
+    "Six toy controls are software sanity, not calibration or human agreement.",
+    "NLI can confuse relation evidence, negation, names and lexical overlap; train-source overlap possible.",
+    "Precision handles invalid refs conservatively in denominator; differs from official ALCE implementation.",
+    "Judge only sees passage/claim; system names are never model input. Same reused development; question CI not seed CI."
+  ]
+}

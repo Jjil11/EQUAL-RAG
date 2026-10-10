@@ -1,0 +1,566 @@
+{
+  "status": "COMPLETE_POSTHOC_MULTIPLICITY_SENSITIVITY",
+  "bootstrap_samples": 100000,
+  "seed": 20261010,
+  "family_size": 48,
+  "familywise_alpha": 0.05,
+  "interval_tail_quantile": 0.0005208333333333333,
+  "model_generations": 0,
+  "heldout_predictions": 0,
+  "primary_summary_sha256": "d4873c46709af2ed175775728c17d67379ff91cb345647117dd01ade55c69423",
+  "warnings": [
+    "Post-hoc family and reused development: not preregistered confirmation.",
+    "Bonferroni percentile bootstrap sensitivity is not an exact calibrated test.",
+    "Intervals do not estimate training-seed variation."
+  ],
+  "settings": {
+    "regression_dev": {
+      "baseline": {
+        "grounded_quality": {
+          "delta": 0.006787330316742113,
+          "ordinary_ci95": [
+            -0.01268512357669485,
+            0.024498886414253906
+          ],
+          "bonferroni_family_interval": [
+            -0.02897750603864736,
+            0.03667269646308844
+          ]
+        },
+        "mean_tokens": {
+          "delta": -2.6000000000000014,
+          "ordinary_ci95": [
+            -9.024999999999999,
+            1.0375000000000014
+          ],
+          "bonferroni_family_interval": [
+            -15.320859374999996,
+            1.7375000000000036
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.08043162600005704,
+          "ordinary_ci95": [
+            -0.006690845598709516,
+            0.2553951659153177
+          ],
+          "bonferroni_family_interval": [
+            -0.02058741124528342,
+            0.4354870446013702
+          ]
+        },
+        "answer_f1": {
+          "delta": 0.0013789305149358166,
+          "ordinary_ci95": [
+            -0.006609750226901993,
+            0.009045224089778372
+          ],
+          "bonferroni_family_interval": [
+            -0.013505132741400593,
+            0.014614751872956858
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.0375,
+          "ordinary_ci95": [
+            -0.0875,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.125,
+            0.0
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": -0.0125,
+          "ordinary_ci95": [
+            -0.037500000000000006,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.0625,
+            0.0
+          ]
+        }
+      },
+      "action_ce": {
+        "grounded_quality": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            -0.020134228187919434,
+            0.01728395061728394
+          ],
+          "bonferroni_family_interval": [
+            -0.03678995534253361,
+            0.027428592474293783
+          ]
+        },
+        "mean_tokens": {
+          "delta": -3.125,
+          "ordinary_ci95": [
+            -9.6503125,
+            0.6375000000000028
+          ],
+          "bonferroni_family_interval": [
+            -15.986464843750005,
+            1.3864648437500324
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.07829627309740061,
+          "ordinary_ci95": [
+            -0.005334783694545275,
+            0.250460438319617
+          ],
+          "bonferroni_family_interval": [
+            -0.01849835535323799,
+            0.4320493058156173
+          ]
+        },
+        "answer_f1": {
+          "delta": 0.0034838324792677566,
+          "ordinary_ci95": [
+            -0.0055210213994860684,
+            0.012918125122946201
+          ],
+          "bonferroni_family_interval": [
+            -0.012378211670934692,
+            0.01989414611911022
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.0375,
+          "ordinary_ci95": [
+            -0.0875,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.125,
+            0.0
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": -0.0125,
+          "ordinary_ci95": [
+            -0.037500000000000006,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.0625,
+            0.0
+          ]
+        }
+      },
+      "action_ul": {
+        "grounded_quality": {
+          "delta": 0.002262443438914019,
+          "ordinary_ci95": [
+            -0.01620370370370372,
+            0.018018018018018
+          ],
+          "bonferroni_family_interval": [
+            -0.03289217900605386,
+            0.027307761172651008
+          ]
+        },
+        "mean_tokens": {
+          "delta": 0.5874999999999986,
+          "ordinary_ci95": [
+            -0.6499999999999986,
+            1.7250000000000014
+          ],
+          "bonferroni_family_interval": [
+            -1.7125000000000057,
+            2.549999999999997
+          ]
+        },
+        "relative_utility": {
+          "delta": -0.010050124457677723,
+          "ordinary_ci95": [
+            -0.03571024853975924,
+            0.014588592794820244
+          ],
+          "bonferroni_family_interval": [
+            -0.053198781109395604,
+            0.03192430815371976
+          ]
+        },
+        "answer_f1": {
+          "delta": 0.0038402577598120047,
+          "ordinary_ci95": [
+            -0.004620774590007026,
+            0.01249481899481897
+          ],
+          "bonferroni_family_interval": [
+            -0.011362853262485451,
+            0.018910736596864774
+          ]
+        },
+        "repetition_rate": {
+          "delta": 0.0125,
+          "ordinary_ci95": [
+            0.0,
+            0.037500000000000006
+          ],
+          "bonferroni_family_interval": [
+            0.0,
+            0.075
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            0.0,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "strong_ce": {
+        "grounded_quality": {
+          "delta": 0.002262443438914019,
+          "ordinary_ci95": [
+            -0.010845986984815648,
+            0.013333333333333308
+          ],
+          "bonferroni_family_interval": [
+            -0.021730475282190624,
+            0.020829348898191036
+          ]
+        },
+        "mean_tokens": {
+          "delta": -5.537500000000001,
+          "ordinary_ci95": [
+            -14.600000000000001,
+            0.8374999999999986
+          ],
+          "bonferroni_family_interval": [
+            -23.0229296875,
+            2.2114648437500355
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.1441378726865492,
+          "ordinary_ci95": [
+            -0.013721949253742493,
+            0.3891452015106617
+          ],
+          "bonferroni_family_interval": [
+            -0.043916388189632144,
+            0.6264485771235943
+          ]
+        },
+        "answer_f1": {
+          "delta": -0.00198631716633918,
+          "ordinary_ci95": [
+            -0.010488256077138576,
+            0.005083449481605036
+          ],
+          "bonferroni_family_interval": [
+            -0.01768897295157909,
+            0.009938153447097088
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.025,
+          "ordinary_ci95": [
+            -0.07500000000000001,
+            0.024999999999999998
+          ],
+          "bonferroni_family_interval": [
+            -0.11250000000000002,
+            0.05
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": -0.024999999999999998,
+          "ordinary_ci95": [
+            -0.0625,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.1,
+            0.0
+          ]
+        }
+      }
+    },
+    "prospective_dev": {
+      "baseline": {
+        "grounded_quality": {
+          "delta": 0.07246376811594202,
+          "ordinary_ci95": [
+            0.0,
+            0.1585365853658537
+          ],
+          "bonferroni_family_interval": [
+            0.0,
+            0.22448979591836732
+          ]
+        },
+        "mean_tokens": {
+          "delta": 8.837500000000006,
+          "ordinary_ci95": [
+            -1.4499999999999886,
+            20.14999999999999
+          ],
+          "bonferroni_family_interval": [
+            -8.050000000000011,
+            29.1343945312501
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.0992897920347966,
+          "ordinary_ci95": [
+            -0.10236072774080687,
+            0.30373609604114155
+          ],
+          "bonferroni_family_interval": [
+            -0.18235470306790574,
+            0.49834700096402873
+          ]
+        },
+        "answer_f1": {
+          "delta": 0.003146289112713155,
+          "ordinary_ci95": [
+            -0.0008894038791564113,
+            0.00979741468499526
+          ],
+          "bonferroni_family_interval": [
+            -0.002132783987018659,
+            0.016476588673996317
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.0625,
+          "ordinary_ci95": [
+            -0.125,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.1875,
+            0.03749999999999998
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": 0.04999999999999999,
+          "ordinary_ci95": [
+            0.0,
+            0.11249999999999999
+          ],
+          "bonferroni_family_interval": [
+            -0.03750000000000003,
+            0.16249999999999998
+          ]
+        }
+      },
+      "action_ce": {
+        "grounded_quality": {
+          "delta": -0.014492753623188415,
+          "ordinary_ci95": [
+            -0.05714285714285716,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            -0.11753377222982209,
+            0.0
+          ]
+        },
+        "mean_tokens": {
+          "delta": -0.07499999999998863,
+          "ordinary_ci95": [
+            -10.1875,
+            9.875
+          ],
+          "bonferroni_family_interval": [
+            -17.825000000000017,
+            17.47085937500014
+          ]
+        },
+        "relative_utility": {
+          "delta": -0.02885767056584776,
+          "ordinary_ci95": [
+            -0.13859510873768452,
+            0.06166105445430082
+          ],
+          "bonferroni_family_interval": [
+            -0.25577865643683434,
+            0.12834830963605154
+          ]
+        },
+        "answer_f1": {
+          "delta": -0.0013736263736263687,
+          "ordinary_ci95": [
+            -0.005769230769230763,
+            0.0012362637362637388
+          ],
+          "bonferroni_family_interval": [
+            -0.010428185096153852,
+            0.002197802197802204
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.012499999999999956,
+          "ordinary_ci95": [
+            -0.0625,
+            0.03750000000000009
+          ],
+          "bonferroni_family_interval": [
+            -0.11249999999999993,
+            0.07500000000000007
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            -0.04999999999999999,
+            0.04999999999999999
+          ],
+          "bonferroni_family_interval": [
+            -0.08750000000000002,
+            0.08750000000000002
+          ]
+        }
+      },
+      "action_ul": {
+        "grounded_quality": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            0.0,
+            0.0
+          ],
+          "bonferroni_family_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "mean_tokens": {
+          "delta": -1.5,
+          "ordinary_ci95": [
+            -11.4375,
+            8.3125
+          ],
+          "bonferroni_family_interval": [
+            -19.033359374999993,
+            15.712500000000004
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.011417697431018059,
+          "ordinary_ci95": [
+            -0.0612437481255534,
+            0.09203727055758104
+          ],
+          "bonferroni_family_interval": [
+            -0.11437335459871556,
+            0.1620418341085663
+          ]
+        },
+        "answer_f1": {
+          "delta": -1.317080226286016e-05,
+          "ordinary_ci95": [
+            -0.000322692810014083,
+            0.00034763415765672045
+          ],
+          "bonferroni_family_interval": [
+            -0.0005593059348338592,
+            0.0006868131868131844
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.012499999999999956,
+          "ordinary_ci95": [
+            -0.0625,
+            0.03750000000000009
+          ],
+          "bonferroni_family_interval": [
+            -0.11249999999999993,
+            0.07500000000000007
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            -0.04999999999999999,
+            0.04999999999999999
+          ],
+          "bonferroni_family_interval": [
+            -0.08750000000000002,
+            0.08750000000000002
+          ]
+        }
+      },
+      "strong_ce": {
+        "grounded_quality": {
+          "delta": 0.05797101449275366,
+          "ordinary_ci95": [
+            -0.037037037037037035,
+            0.14814814814814814
+          ],
+          "bonferroni_family_interval": [
+            -0.10256410256410259,
+            0.21308586937565502
+          ]
+        },
+        "mean_tokens": {
+          "delta": 0.3125,
+          "ordinary_ci95": [
+            -11.800000000000011,
+            12.474999999999994
+          ],
+          "bonferroni_family_interval": [
+            -20.24896484375,
+            21.854296875000728
+          ]
+        },
+        "relative_utility": {
+          "delta": 0.13522425276419825,
+          "ordinary_ci95": [
+            -0.11176893913183339,
+            0.36963652587668505
+          ],
+          "bonferroni_family_interval": [
+            -0.2571485692983392,
+            0.5833094866901983
+          ]
+        },
+        "answer_f1": {
+          "delta": 0.00184317164390628,
+          "ordinary_ci95": [
+            -0.0052601352659021675,
+            0.010128899738032868
+          ],
+          "bonferroni_family_interval": [
+            -0.01034375778373521,
+            0.0170525146428318
+          ]
+        },
+        "repetition_rate": {
+          "delta": -0.02499999999999991,
+          "ordinary_ci95": [
+            -0.09999999999999998,
+            0.03750000000000009
+          ],
+          "bonferroni_family_interval": [
+            -0.15000000000000002,
+            0.08750000000000002
+          ]
+        },
+        "true_cap_hit_rate": {
+          "delta": 0.0,
+          "ordinary_ci95": [
+            -0.0625,
+            0.0625
+          ],
+          "bonferroni_family_interval": [
+            -0.10000000000000003,
+            0.10000000000000003
+          ]
+        }
+      }
+    }
+  }
+}
