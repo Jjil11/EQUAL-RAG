@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "unchanged_frozen_files": 54,
+  "predictions": {
+    "package2/exhaustive_prompt/predictions380.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
+    },
+    "package3/base/eval/independent_question_shards/gpu0/predictions.jsonl": {
+      "sha256": "9dbee216fdc35fbef9b946b95a0725917a984b1934e92aeb6bcf885241c2deae",
+      "rows": 95
+    },
+    "package3/base/eval/independent_question_shards/gpu1/predictions.jsonl": {
+      "sha256": "a63fc89142b7735fc3e35315581a4e289c2e9097e182d0152af3e025a0fd2094",
+      "rows": 95
+    },
+    "package3/base/eval/independent_question_shards/gpu2/predictions.jsonl": {
+      "sha256": "71e97706553ba0df336e309e5214a451a7c7d83e74a4284c474c5cc806706a64",
+      "rows": 95
+    },
+    "package3/base/eval/independent_question_shards/gpu3/predictions.jsonl": {
+      "sha256": "fd3b8a6de177f45bcf9d50c21cfb1e8c95a99bb7dcd335ac6383a345bafe8c63",
+      "rows": 95
+    },
+    "package3/base/eval/predictions380.jsonl": {
+      "sha256": "cd64315421e8a5e2f2445100493d1b8bfd855d25b309cca0b61f645261864755",
+      "rows": 380
+    },
+    "package3/equal_a025/eval/predictions380.jsonl": {
+      "sha256": "4a63bc380cc2dd2bf11076ea35c5b2678934c363a3398c40dbfb3707233e6d55",
+      "rows": 380
+    },
+    "package3/equal_ce/eval/predictions380.jsonl": {
+      "sha256": "4e0eb66b5c72e5fd89647c9bba1634c40254bb23eb3067799a38a51e1a5be70b",
+      "rows": 380
+    },
+    "package3/matched_sft/eval/predictions380.jsonl": {
+      "sha256": "110cee0484718bc51694eb30488a9aae74cf4e063845dc1bf9f6340a275c1dcf",
+      "rows": 380
+    },
+    "package3/native_train350/independent_question_shards/gpu0/predictions.jsonl": {
+      "sha256": "9ddf269291c89ab9e8af74fb651b77e1de6491e93620265ead8df6f4ad51f8b2",
+      "rows": 88
+    },
+    "package3/native_train350/independent_question_shards/gpu1/predictions.jsonl": {
+      "sha256": "543349fb6e3463a71944801cacfb5c262b354994b4ef3c52deabc3c18dcc4e25",
+      "rows": 88
+    },
+    "package3/native_train350/independent_question_shards/gpu2/predictions.jsonl": {
+      "sha256": "14e539923a1f43a57146326f7892aaa2071f9a6f53cdc8f2741016aed00eb1aa",
+      "rows": 88
+    },
+    "package3/native_train350/independent_question_shards/gpu3/predictions.jsonl": {
+      "sha256": "173dba9b4c45ac6ad6476d8762bc2c3236ddbab9bc50136f54ef6a05cc75b287",
+      "rows": 86
+    },
+    "package3/native_train350/predictions.jsonl": {
+      "sha256": "13197548de4af11f778276705c7761f32cf316ee5fbbab31ab25f5bdfc2030d3",
+      "rows": 350
+    },
+    "single_gpu_v3/package2/exhaustive_prompt/predictions380.jsonl": {
+      "sha256": "0c11845702a8625c45f803bcc7ba153c6fd09735e724d5fa1f3495697e33bb53",
+      "rows": 380
+    },
+    "single_gpu_v3/package2/matched_dpo/predictions380.jsonl": {
+      "sha256": "ce71099a692eb77cd1f289814eda72d50e3f5a180626836d08a9916a71351f42",
+      "rows": 380
+    },
+    "single_gpu_v3/package2/matched_sft/predictions380.jsonl": {
+      "sha256": "ada71129cce68e33b2e8911ef266f683786e02b9564ef195006653981d31f7ef",
+      "rows": 380
+    },
+    "single_gpu_v3/replay/a025/predictions380.jsonl": {
+      "sha256": "de1f87ee5597962fd5302c1af6b12aaec667f1375ee15c8fb31b0c7f8eb159b2",
+      "rows": 380
+    },
+    "single_gpu_v3/replay/a050/predictions380.jsonl": {
+      "sha256": "4ca497ff29ebf08daacf3b17af3532f4f243c66a6775c0099d2263fcca1d73df",
+      "rows": 380
+    },
+    "single_gpu_v3/replay/base/predictions380.jsonl": {
+      "sha256": "213da1811974b247df674e19f9c3cc24ca02c94130af032c309670ca4c8720d8",
+      "rows": 380
+    },
+    "single_gpu_v3/replay/ce/predictions380.jsonl": {
+      "sha256": "2774a33077f04cae51e875f407faaf5ded4ad2b86395436e3e4da875e9fc0107",
+      "rows": 380
+    },
+    "technical_recovery_v1/package2/exhaustive_prompt/predictions380.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
+    },
+    "technical_recovery_v2/package2/exhaustive_prompt/predictions380.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
+    }
+  },
+  "all_requested_view_sizes_and_denominators_verified": true,
+  "all_ledger_gain_loss_identities_verified": true,
+  "main_report_never_written": true,
+  "frozen_scorer_ledger_bootstrap_reused": true
+}

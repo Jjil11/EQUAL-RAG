@@ -1,0 +1,14 @@
+{
+  "eligible_A": 15,
+  "eligible_C2": 10,
+  "native_EOS_trajectories": 348,
+  "A": 15,
+  "C1_embedded": 15,
+  "C2": 10,
+  "B": 0,
+  "total_records": 25,
+  "retention_trajectories": 120,
+  "retention_positions": 5317,
+  "selection": "fixed seed-hash caps 21 A,20 C2,120 retention; no test-score gate",
+  "known_lexical_inventory_not_exhaustive_semantic_evidence": true
+}

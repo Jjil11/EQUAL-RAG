@@ -1,62 +1,66 @@
-# Method guide / 方法详解
+# Current method: native-tail counterfactual repair
 
-## 1. The problem in plain language
+Current through 2026-10-17. The [2026-10-11 method](METHOD_20261011.md) is historical. Its isolated two-site loss and old Anchor initialization are **not** the current framework.
 
-A retrieval-augmented model receives a question and retrieved documents, then emits answers with citations. It generates one token at a time. Saving tokens is useful only if the model preserves the answers the question needs and cites the documents that support them.
+## Evidence states
 
-本项目不是单纯“让回答越短越好”。我们希望模型先知道什么内容必须保留，缺什么就补什么，完成后再停止；“少说”必须与“答全、有依据”一起检验。
+`E_sup(D)` is the normalized known answer groups lexically supported in documents; `E_past` is the groups already emitted; `ΔE = E_sup − E_past`. These training/evaluation proxies are not semantic completeness certificates. Inference receives no gold labels or ΔE.
 
-## 2. Answer–evidence edges
+| State | Allowed location | Positive target | Restriction |
+|---|---|---|---|
+| A: new-entity completion | Native Base tail with remaining known support | Genuinely new entity + supporting citation, then closure | Adding a second citation to an old name is not a new entity |
+| C1: completion closure | End of A repair | Closure + EOS | Embedded in A, not another independent record |
+| C2: stop retention | Native exhausted stop under known inventory | Preserve native closure/EOS | Never truncate ordinary nonrepeating mid-list continuation |
 
-A training edge links an answer group (including aliases) to a supporting retrieved document. For the synthetic response `Alpha [1], Beta [2]`, the two required edges are Alpha→1 and Beta→2. Omitting Beta, citing Alpha to the wrong document, or repeatedly emitting Alpha are different failures.
+Qwen has **21 A + 20 C2 = 41 records**, with 21 embedded C1 sites. Mistral native compilation has **15 A + 10 C2 = 25 records**, with 15 embedded C1 sites. These final pools contain no B records; historical bridge proposals are not silently counted as current evidence.
 
-In this implementation, support labels use answer aliases and upstream document annotations. The presence of an alias in a paragraph does not establish the relation asked by the question. This is a practical training/evaluation proxy, not a proof of semantic truth. Gold labels belong to training compilation and evaluation; the inference policy never receives gold answers.
+## Boundary alignment
 
-## 3. The implemented method family
+Separately encoding text appended after `]` can differ from jointly encoding `], ...`. The compiler rolls back a small native tail, jointly re-tokenizes, then finds the first positive/negative token divergence. Shared prefix tokens remain context, not contradictory labels.
 
-| Component | Role | Implementation pointers |
-|---|---|---|
-| Evidence labels / counterfactuals | Contrast complete answers with omission, wrong citation, or repetition | `build_qampari_pilot.py`, `completion_pairs_20261010.py` |
-| On-policy prefixes | Study the states actually visited by the current model | `mine_qampari_trajectories.py`, `mine_qwen_retrieval_align_20261010.py` |
-| Completion targets | Preserve existing covered items, add missing supported items, then terminate | `completion_pairs_20261010.py` |
-| Selective anchor protection | Avoid changing useful behavior outside the repair region | `train_qwen_priority_20261010.py`, `train_qwen_terminal_bridge_20261010.py` |
-| Native-token consistency | Align first action and terminal EOS; avoid conflicting positive/negative paths | `compile_qwen_native_consistent_20261010.py` |
-| Telemetry | Record exact generated IDs, actual EOS, and safety-cap termination | `eval_verified_outputs_20261010.py` |
+The audit's 21/21 mismatch rates demonstrate segmentation inconsistency, not zero continuation probability or universal hard deadlock. Standard whole-answer SFT already encodes full targets jointly. Standalone IDs may differ from contextual IDs, particularly in SentencePiece; use real contexts.
 
-All pointers above are in [`research/`](../research). They describe a sequence of experimental versions, not a single combined model proven by every historical result.
+## Current objective
 
-## 4. Latest training objective
-
-For an active repair, the current pair arm uses:
+Exact implementation: [current source](../research/trajectory_repair_20261017/). These are dated research programs, not a generic training SDK.
 
 ```text
-loss = 10 × max(selective_KL − 0.0001, 0)
-     + 0.1 × (first-action allowed-set CE + margin hinge)
-     + 0.1 × terminal allowed-EOS-set CE
+positive supervision:
+    first-action CE + mean repair-span CE
+    + 2 × C1 terminal CE + first-new-entity semantic CE (A only)
+
+prefix retention R:
+    10 × selective KL(Base || student)
+    + 2 × changed-top1-only mean relu(0.5 − margin)
+
+optional A-Only contrast:
+    β × action Hinge + (β/2) × citation Hinge, margin 2
+    no C1/C2 negative continuation Hinge
+
+auxiliary retention:
+    0.5 × R on one additional native retention visit per supervised visit
 ```
 
-The hinge compares the best allowed next-token log probability with the recorded rejected next-token log probability, with margin 1. CE uses total probability mass over allowed tokens. The CE control removes the first-action hinge. The UL control uses allowed-set CE plus negative-action unlikelihood instead of that hinge. All three retain the same terminal term, labels, anchor cache, optimizer budget and selected training rows.
+Allowed closure/EOS classes use total probability mass. C2 has no A semantic/C1 term. KL target is 0; retention is soft and changed-top-1-only. No Max-Guard is used in final configurations. β=0 is **CE repair**, not renamed Pair.
 
-这是在指定训练前缀上鼓励正确下一动作，同时用KL保护保留部分；并不是对所有事实正确性或完整性的硬保证。最新实现只监督首/末稀疏位点，并未完整监督中间所有补齐文本。缓存的KL坐标采用重分词后的响应位置，不应与原始生成ID坐标混为一谈。
+Implementation pointers in the current source folder:
 
-## 5. What changed in the latest repair?
+- `qwen_tail_fidelity_v3_20261015.py`: positive first/span/terminal/semantic loss.
+- `qwen_tail_fidelity_v2_20261015.py`: mean changed-top-1 retention.
+- `qwen_pair_aonly_20261015.py`: disable C1/C2 Hinge, fixed-step A-only variants.
+- `entity_abc_contracts_20261015.py`: normalized inventory and entity contracts.
+- `run_matched_baselines.py`: full-answer CE and sum-log-prob DPO + 0.1 SFT.
+- `run_second_backbone_v2.py`: native Mistral labels, loss and diagnostics.
+- `single_gpu_runtime_v3.py`: isolated-A100 Qwen loading, no static merging.
 
-The invalid preceding native-terminal version rejected a punctuation token on a first-action path while retaining that same token on a positive terminal path. The latest compiler jointly aligned 72 native stop contexts and first actions, reducing exact positive-path conflicts to zero. The other 78 counterfactual terminal contexts stayed unchanged. Four decoded-prefix flags under alternate tokenization remain; zero exact conflicts is not an all-label semantic validation.
+## Optimization and inference
 
-This is a validity repair, not an independent novelty contribution. EOS and boundary fixes cannot by themselves support a claim of a new research method. The coverage-protection/completion idea must win against credible controls and generalize.
+Original Base is both initialization and KL reference. LoRA r8/alpha16/dropout0 on q/k/v/o/gate/up/down projections; AdamW lr2e-5, accumulation4, clipping1, exactly60 updates/240 supervised visits, Seed20261015 in the supplement. EQUAL adds240 auxiliary retention visits: **not matched FLOPs**.
 
-## 6. Why the current result is not the endpoint
+Inference is unmerged LoRA, ordinary greedy generation, no thinking, cap256. BF16 static merging and Max-Guard are diagnostic variants, not current methods. Observed static-merge degradation is not proof that every BF16 merge fails.
 
-At the 72 original stop prefixes, every compared arm still chose a non-EOS token by argmax. The un-interpolated pair checkpoint also produced 0/72 EOS argmax. Many prefixes end after merged `],`, a syntactic state that invites more list items. Teacher-forced completed targets may be easy to terminate but not states reached by free generation.
+## Evidence boundaries
 
-The next **proposed, unlaunched** experiment is coherent repair-span supervision: begin at the real divergence/boundary, learn a valid closure or missing answer/citation sequence, then EOS. This retains ordinary inference and coverage protection. It is a hypothesis to test, not an achieved result or guaranteed solution.
+Development three-Seed/12-ablation studies, the frozen three-Seed Full311 evaluation, and later post-unsealing baselines/Mistral are separate studies. Mistral AOnly improves over Base; pure CE transfer intervals cross zero. New Qwen baselines have higher Q. See [evidence ledger](EXPERIMENTS.md).
 
-## 7. Vocabulary / 术语
-
-- **LoRA / adapter**：只训练少量附加参数，不完整重训14B基座。
-- **Anchor**：保护和比较用的已训练参考模型；不是原始未适配Qwen。
-- **KL**：约束新模型的预测分布别离参考模型太远；不是语义保证。
-- **EOS**：模型决定结束的特殊token。
-- **cap256**：最多允许生成256个token的安全上限，不是固定回答长度。
-- **Development**：可用于方案选择的数据，反复用过后不能再当独立确认。
-- **Bootstrap CI**：按问题重采样的区间；单seed的区间不能估计训练seed变化。
+Teacher-forced Ret./120 is not free-generation preservation on unseen questions, factual correctness or guaranteed no answer loss. No universal model/tokenizer behavior, semantic-entailment improvement or controlled serving acceleration is established.

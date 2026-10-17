@@ -27,6 +27,13 @@ def verify():
             if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=record['release_sha256']:
                 errors.append(rel+': release hash mismatch')
             count+=1
+    publication=ROOT/'publication_20261017.json'
+    if publication.exists():
+        for record in json.loads(publication.read_text(encoding='utf-8'))['files']:
+            p=ROOT/record['path']
+            if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=record['sha256']:
+                errors.append(record['path']+': 20261017 publication hash mismatch')
+            count+=1
     for p in files():
         rel=p.relative_to(ROOT).as_posix()
         if p.suffix in BAD_BINARY or p.name in {'.env','id_rsa','id_ed25519'}:errors.append(rel+': forbidden artifact type')
@@ -42,7 +49,7 @@ def verify():
             def inspect_json(value):
                 if isinstance(value,dict):
                     for key,item in value.items():
-                        if key in {'prompt','output','short','chosen','rejected','aliases','docs','documents','premise','claim'}:
+                        if key in {'prompt','output','short','chosen','rejected','aliases','docs','documents','premise','claim','naive_ids','joint_ids','naive_boundary_window','joint_boundary_window','prompt_token_ids','generated_token_ids'}:
                             errors.append(rel+': unexpected raw-example field '+key)
                         inspect_json(item)
                 elif isinstance(value,list):

@@ -1,0 +1,66 @@
+{
+  "base": {
+    "training_diagnostics_summary.json": {
+      "A_first_action": 0,
+      "A_total": 15,
+      "C1": 5,
+      "A_first_entity_exact": 0,
+      "C2": 10,
+      "C2_total": 10
+    },
+    "retention_summary.json": {
+      "exact": 120,
+      "trajectories": 120,
+      "changed": 0,
+      "positions": 5317
+    }
+  },
+  "matched_sft": {
+    "training_diagnostics_summary.json": {
+      "A_first_action": 15,
+      "A_total": 15,
+      "C1": 15,
+      "A_first_entity_exact": 14,
+      "C2": 10,
+      "C2_total": 10
+    },
+    "retention_summary.json": {
+      "exact": 28,
+      "trajectories": 120,
+      "changed": 482,
+      "positions": 5317
+    }
+  },
+  "equal_ce": {
+    "training_diagnostics_summary.json": {
+      "A_first_action": 13,
+      "A_total": 15,
+      "C1": 15,
+      "A_first_entity_exact": 12,
+      "C2": 10,
+      "C2_total": 10
+    },
+    "retention_summary.json": {
+      "exact": 81,
+      "trajectories": 120,
+      "changed": 68,
+      "positions": 5317
+    }
+  },
+  "equal_a025": {
+    "training_diagnostics_summary.json": {
+      "A_first_action": 15,
+      "A_total": 15,
+      "C1": 15,
+      "A_first_entity_exact": 12,
+      "C2": 10,
+      "C2_total": 10
+    },
+    "retention_summary.json": {
+      "exact": 73,
+      "trajectories": 120,
+      "changed": 63,
+      "positions": 5317
+    }
+  }
+}

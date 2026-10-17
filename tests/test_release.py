@@ -9,7 +9,7 @@ class ReleaseTests(unittest.TestCase):
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         self.assertEqual(module.verify()[0],[])
 
-    def test_latest_scope_and_gate(self):
+    def test_historical_20261011_scope_and_gate(self):
         d=json.loads((ROOT/'results/qwen_native_consistent/summary.json').read_text())
         self.assertEqual(d['new_predictions'],480)
         self.assertEqual(d['holdout_predictions'],0)

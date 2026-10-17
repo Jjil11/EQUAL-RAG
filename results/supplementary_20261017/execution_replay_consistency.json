@@ -1,0 +1,22 @@
+{
+  "base": {
+    "questions": 380,
+    "identical_token_trajectories": 380,
+    "different_token_trajectories": 0
+  },
+  "ce": {
+    "questions": 380,
+    "identical_token_trajectories": 380,
+    "different_token_trajectories": 0
+  },
+  "a025": {
+    "questions": 380,
+    "identical_token_trajectories": 380,
+    "different_token_trajectories": 0
+  },
+  "a050": {
+    "questions": 380,
+    "identical_token_trajectories": 380,
+    "different_token_trajectories": 0
+  }
+}

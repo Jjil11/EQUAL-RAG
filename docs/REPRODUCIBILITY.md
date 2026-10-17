@@ -1,94 +1,40 @@
-# Reproduction levels and commands
+# Reproduction: public statistics vs owner-asset GPU replay
 
-## Level 1: inspect the released evidence
-
-```bash
-python scripts/show_results.py
-python scripts/verify_release.py
-```
-
-Uses Python standard library only. The viewer reads saved aggregate JSON; no fabricated or regenerated metrics. The verifier checks source/result hashes, Python syntax, internal documentation links, prohibited artifact types, and common private-path/credential patterns. It does not establish complete absence of secrets or research correctness.
-
-## Level 2: CPU synthetic checks
+## CPU quick start
 
 ```bash
 python -m pip install -r requirements-analysis.txt
+python scripts/show_results.py
+python scripts/verify_release.py
 python scripts/run_checks.py
+python scripts/reproduce_supplementary.py
 ```
 
-Checks strict unit-local scoring and completion-repair invariants using synthetic labels. The historical data-dependent test in `test_completion_repair_20261010.py` is not part of this lightweight suite because benchmark/prepared rows are deliberately not distributed. GPU/tokenizer-dependent historical suites are likewise not represented as passing by the CPU checks.
+Python3.10+, NumPy1.26–2.x. Original independent Windows checking used NumPy2.2.6. Viewer/verifier use only stdlib. The last command rebuilds325 points,65 ledgers and1425 delta/CI values from anonymous per-question six-column arrays: grounded groups, supported groups, tokens, Full F1, repetition flag, true-cap flag. Original lexicographic sampling order is preserved; exact archived statistical functions use20000 paired question draws, RNG20261010, undefined draws excluded only from Q. No account, GPU or model download is needed.
 
-## Level 3: training-code inspection / historical replay
+This validates published arithmetic/uncertainty, not generation, text matching or semantic support. Main three-Seed/hierarchical and development ablation aggregates are also exported, but this replay command specifically reconstructs supplementary single-Seed S2/S3.
 
-Observed completed runtime: Linux, Python3.10.20, PyTorch2.7.1/CUDA12.6, Transformers4.57.3, PEFT0.18.0, A100-SXM4-40GB. Latest three arms used separate GPUs, one GPU per training arm. Training uses BF16 and batch1/gradient accumulation8.
+## Frozen GPU settings
 
-`requirements-training.txt` records the main stack, but is **not a complete transitive lockfile**. Choose the platform-appropriate CUDA wheel; we have not rerun the full14B training on the Windows publication machine. Exact replay also needs the original anchor adapter, prepared train/smoke labels, cached teacher logits, official alias groups and paired prediction files. These are excluded assets, not quietly supplied by the quick start.
+Seed20261015; LoRA r8/alpha16/dropout0 on q/k/v/o/gate/up/down projections; AdamW lr2e-5, accumulation4, clipping1; exactly60 steps/240 supervised visits. Whole-answer SFT covers the entire positive response and EOS. Sequence DPO uses frozen Base, summed response log probabilities, β0.1 and0.1 whole-answer CE. Identical C2 pairs receive no artificial preference gradient. EQUAL uses positive repairs plus10KL+2 changed-only margin0.5 and240 auxiliary retention visits; AOnly action β0.25 and citation β/2, no C1/C2 negative Hinge. Matched steps/positive visits are not equal FLOPs or controlled wall time.
 
-Paths are configurable through `research/release_paths.py`:
+All final inference uses unmerged LoRA, greedy decoding, thinking disabled, cap256. No main-method rules; Entity Blocker alone has a decoder rule. Four frozen Qwen controls exactly reproduced380/380 original token paths.
+
+Qwen uses the official unadapted Base, not old Anchor initialization. Mistral revision: `c170c708c41dac9275d15a8fff4eca08d52bab71`; [model/tokenizer file hashes](../results/supplementary_20261017/package3/model_identity.json). Qwen pool SHA256: `0d91e2e47fc2089183ea3cfa7e45ba9ae79e78de9fd26c95cfbc18dcbba85ceb`,21A+20C2 with21 embeddedC1. Mistral has15A+10C2/15 embeddedC1;120 retention trajectories/5317 positions. Same updates, different native pool sizes/effective epochs.
+
+## Required assets and configurable paths
+
+Current dated source: [research snapshot](../research/trajectory_repair_20261017/). Exact GPU replay needs separately obtained original questions/passages, tokenizer-dependent compiled labels, native trajectories, archived main adapters and reference logits. Numeric result arrays cannot recreate those assets. Never delete frozen hash asserts to force another dataset through historical code.
 
 ```bash
-export EQUAL_RAG_ROOT=/path/to/experiment-workspace
-export EQUAL_RAG_QWEN_MODEL=/path/to/models/Qwen3-14B
-export EQUAL_RAG_CACHE_ROOT=/path/to/anchor-caches
-export EQUAL_QWEN_TERMINAL_ARM=action_pair  # or action_ce / action_ul
+export EQUAL_RAG_ROOT=/path/to/owner-prepared-workspace
+export EQUAL_RAG_QWEN_MODEL=/path/to/Qwen3-14B
+export EQUAL_RAG_MISTRAL_MODEL=/path/to/Mistral-7B-Instruct-v0.3
+export EQUAL_RAG_CACHE_ROOT=/path/to/local-cache
 ```
 
-Use an isolated new workspace, never a completed original run directory. Expected latest prepared-data layout:
+The workspace needs the original named `runs/` and, for some audits, `artifacts/` snapshots. CUDA/Linux, PyTorch, Transformers, PEFT and tokenizer dependencies are needed; see training requirements and manifests. This is **not a turnkey SDK**. Final Qwen loading uses `run_qwen_single_v3.py`; directly running `run_matched_baselines.py` retains the historical multi-device loader. Mistral compiler/training is v2; v3 only shards independent preparation questions at batch size1 and restores order.
 
-```text
-experiment-workspace/
-├── runs/qwen_native_consistent_20261010/compiled/{train.jsonl,audit.json,smoke.jsonl}
-├── runs/qwen3_14b_compression_calibration/pref_0p4/dev/adapter/
-├── data/qampari_evidence_full/dev.jsonl
-├── data/prospective_qampari_gtr5_v2_20261010/dev.jsonl
-└── ALCE/data/qampari_eval_gtr_top100.json
-anchor-caches/qwen_retrieval_align_20261010/*.pt
-```
+Historical preparation/launch/gate/merge functions remain in dated dependencies for audit, not instructions to execute every `main()`. Final supplement has no new training gate/checkpoint selection. `release_paths.py` rewrites private paths only; original/exported hashes record this distribution transformation. The exact statistical function bodies are mechanically extracted unchanged and AST-compared in CPU tests.
 
-If you have the authorized prepared assets and main model-stack dependencies, this is the historical training command pattern (not run automatically by the release):
-
-```bash
-CUDA_VISIBLE_DEVICES=0 python research/train_qwen_native_consistent_20261010.py \
-  --model "$EQUAL_RAG_QWEN_MODEL" \
-  --train "$EQUAL_RAG_ROOT/runs/qwen_native_consistent_20261010/compiled/train.jsonl" \
-  --test "$EQUAL_RAG_ROOT/data/qampari_evidence_full/dev.jsonl" \
-  --out-dir "$EQUAL_RAG_ROOT/runs/replay_action_pair/train" \
-  --method trajectory_repair --seed 20260930 --epochs 1 --lr 1e-5 \
-  --grad-accum 8 --max-length 2048 --max-new-tokens 256 \
-  --init-adapter "$EQUAL_RAG_ROOT/runs/qwen3_14b_compression_calibration/pref_0p4/dev/adapter" \
-  --anchor-logits-dir "$EQUAL_RAG_CACHE_ROOT/qwen_retrieval_align_20261010" \
-  --anchor-alpha 10 --anchor-kl-target 0.0001 \
-  --trajectory-alpha 0.1 --trajectory-margin 1 \
-  --stop-alpha 0 --pref-alpha 0 --dual-init 0 --dual-lr 0 --dual-max 0 \
-  --disable-lora-dropout --disable-thinking --log-every 20
-```
-
-The wrapper deliberately skips its legacy evaluation; evaluation is separate. It does not execute a new coherent-span method. Prepared-data asserts are historical validity checks, not obstacles to remove.
-
-Interpolate then evaluate with exact telemetry:
-
-```bash
-python research/interpolate_peft_adapters.py \
-  --base "$EQUAL_RAG_ROOT/runs/qwen3_14b_compression_calibration/pref_0p4/dev/adapter" \
-  --tuned "$EQUAL_RAG_ROOT/runs/replay_action_pair/train/adapter" \
-  --output "$EQUAL_RAG_ROOT/runs/replay_action_pair/interp05/adapter" --weight 0.5
-
-CUDA_VISIBLE_DEVICES=0 python research/eval_verified_outputs_20261010.py \
-  --model "$EQUAL_RAG_QWEN_MODEL" \
-  --train "$EQUAL_RAG_ROOT/runs/qwen_native_consistent_20261010/compiled/train.jsonl" \
-  --test "$EQUAL_RAG_ROOT/data/qampari_evidence_full/dev.jsonl" \
-  --out-dir "$EQUAL_RAG_ROOT/runs/replay_action_pair/regression_dev" \
-  --method trajectory_repair --seed 20260930 --eval-only \
-  --adapter "$EQUAL_RAG_ROOT/runs/replay_action_pair/interp05/adapter" \
-  --disable-thinking --max-length 2048 --max-new-tokens 256
-```
-
-Raw-retrieval evaluation uses its own data path; never label the two different question sets a same-question retrieval ablation. Record fresh manifests and do not merge new metrics with the historical frozen summary.
-
-## Exact replay limitations
-
-- The source hashes in original training manifests describe original files. Release files have sanitized paths and their own hashes.
-- Compilers/finalizers require historical predecessor artifacts and assert expected source hashes. Some finalizers expect source copies under `workspace/code`; that is a historical layout, not the release `research/` location.
-- Aggregate JSON alone cannot recreate confidence intervals; question-level paired records are excluded.
-- CPU checks do not validate GPU numerics, BF16 training, adapter equivalence, or the NLI judge's real-data calibration.
-- The latest version is one training seed and reused development. Do not treat reproduction of that development score as independent confirmation.
+Raw text/real-answer token traces/weights/logits/logs are not bundled. Literal and synthetic tokenizer examples plus21 mismatch decisions are public; redoing real21-record tokenization needs original repair records. For old isolated-site experiments see [the dated2026-10-11 guide](REPRODUCIBILITY_20261011.md). The supplement is post-unsealing, not another blind study.

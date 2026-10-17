@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "point_values": 325,
+    "CI_values": 1425,
+    "ledger_summaries": 65,
+    "raw_prediction_files": 23
+  },
+  "numpy_version": "2.2.6",
+  "independent_environment": "local Windows Python; remote experiment on Linux A100",
+  "all_non_exhaustive_qwen_prompt_token_ids_match_frozen_base": true,
+  "five_new_models_have_matching_initializations_orders_pools_and_exact_60_steps_240_visits": true,
+  "exact_same_frozen_scorer_ledger_and_bootstrap": true,
+  "no_model_training_or_inference_in_local_verification": true
+}

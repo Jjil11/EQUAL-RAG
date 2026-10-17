@@ -1,0 +1,1441 @@
+{
+  "status": "COMPLETE",
+  "results": [
+    {
+      "tokenizer": "microsoft/Phi-3-mini-4k-instruct",
+      "family": "Llama-2/SentencePiece",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+        "files": {
+          "added_tokens.json": "f8e5a880c6c563a126d9efacb654e105fc4b66f21e5a540f04436e9487a955fb",
+          "config.json": "072d4df63228ef806a6b2b2f02a93f1d048ebd31584d0f61d1180aef36e5bcea",
+          "special_tokens_map.json": "810adc6e6c6ef2f56c285ef930d243358a3a9f05e36a01c5a10bafc6fac4609b",
+          "tokenizer.json": "072ab882d6c7192a42f78790945d16c064691321a73251a4b18f6a380f0fbe39",
+          "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "tokenizer_config.json": "32f66c2bab499baaa8341819ad9a13342f957501ce1e989bcb90853a01336cc0"
+        },
+        "tokenizer_class": "LlamaTokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "c039d7291bbe48b7c0fac60dd3e809c7f92b586813a5c0dd4a016ca57d30642f"
+      },
+      "literal_ids": {
+        "]": [
+          4514
+        ],
+        "],": [
+          21251
+        ],
+        "], ": [
+          21251,
+          29871
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          ""
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        21251
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        16308,
+        518,
+        29896,
+        1402,
+        7991,
+        518,
+        29896,
+        29962
+      ],
+      "context_continuation_example_ids": [
+        16308,
+        518,
+        29896,
+        1402,
+        7991,
+        518,
+        29896,
+        1402,
+        8562,
+        518,
+        29906,
+        29962
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 22
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 57
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 35
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "mistralai/Mistral-7B-Instruct-v0.3",
+      "family": "Mistral SentencePiece BPE",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+        "files": {
+          "config.json": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+          "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+          "tokenizer.json": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+          "tokenizer.model": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+          "tokenizer.model.v3": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+          "tokenizer_config.json": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2"
+        },
+        "tokenizer_class": "LlamaTokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "59b2412004fe619a5d3ed67258eef39105fa3aa1e20c6ea4bd46ca7ed416ab25"
+      },
+      "literal_ids": {
+        "]": [
+          5477
+        ],
+        "],": [
+          12820
+        ],
+        "], ": [
+          12820,
+          29473
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          ""
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        12820
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        14771,
+        1501,
+        29508,
+        1949,
+        8177,
+        1501,
+        29508,
+        29561
+      ],
+      "context_continuation_example_ids": [
+        14771,
+        1501,
+        29508,
+        1949,
+        8177,
+        1501,
+        29508,
+        1949,
+        8042,
+        1501,
+        29518,
+        29561
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 22
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 57
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 35
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "openai-community/gpt2",
+      "family": "openai-community/gpt2",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+        "files": {
+          "config.json": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+          "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+          "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+          "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+          "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+        },
+        "tokenizer_class": "GPT2TokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "14f2b2460d6db667aefeca30c2f7713c387c76001c21fba7152896fd8b1b40ef"
+      },
+      "literal_ids": {
+        "]": [
+          60
+        ],
+        "],": [
+          4357
+        ],
+        "], ": [
+          4357,
+          220
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          " "
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        4357
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        44484,
+        685,
+        16,
+        4357,
+        5811,
+        685,
+        16,
+        60
+      ],
+      "context_continuation_example_ids": [
+        44484,
+        685,
+        16,
+        4357,
+        5811,
+        685,
+        16,
+        4357,
+        5074,
+        685,
+        17,
+        60
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 10
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 17
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 17
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 49
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 23
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+      "family": "Qwen byte-level BPE",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+        "files": {
+          "config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+          "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "tokenizer_class": "Qwen2TokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "ae33474a83b349ce9968170537e076391172ecf7ec20ac21051c3a68ecf85141"
+      },
+      "literal_ids": {
+        "]": [
+          60
+        ],
+        "],": [
+          1125
+        ],
+        "], ": [
+          1125,
+          220
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          " "
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        1125
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        61686,
+        508,
+        16,
+        1125,
+        14261,
+        508,
+        16,
+        60
+      ],
+      "context_continuation_example_ids": [
+        61686,
+        508,
+        16,
+        1125,
+        14261,
+        508,
+        16,
+        1125,
+        10252,
+        508,
+        17,
+        60
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 8
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 52
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 34
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "Qwen/Qwen3-14B",
+      "family": "Qwen byte-level BPE",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "files": {
+          "config.json": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a",
+          "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "tokenizer_class": "Qwen2TokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "ae33474a83b349ce9968170537e076391172ecf7ec20ac21051c3a68ecf85141"
+      },
+      "literal_ids": {
+        "]": [
+          60
+        ],
+        "],": [
+          1125
+        ],
+        "], ": [
+          1125,
+          220
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          " "
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        1125
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        61686,
+        508,
+        16,
+        1125,
+        14261,
+        508,
+        16,
+        60
+      ],
+      "context_continuation_example_ids": [
+        61686,
+        508,
+        16,
+        1125,
+        14261,
+        508,
+        16,
+        1125,
+        10252,
+        508,
+        17,
+        60
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 8
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 52
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 34
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "local:Mistral-7B-Instruct-v0.3",
+      "family": "Mistral SentencePiece BPE",
+      "provenance": {
+        "source": "[LOCAL_PATH_REDACTED]",
+        "snapshot_revision": "adapter",
+        "files": {
+          "adapter_config.json": "90e94fd09dd75db4da60dec3935ac7a1721013956e856d0bb1c047b2c1284007",
+          "adapter_model.safetensors": "6be48f69913dbb9570860f5c9585e7df498d4026636d31a25992be0fd39d0e46",
+          "chat_template.jinja": "e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826",
+          "README.md": "2a09660c28fc150413d68c2cf6b4a709cfb9f06a25b3bc08ad4b7e6a6d1abb9f",
+          "special_tokens_map.json": "45187dad192cfa8e55bbc491417657bca8c74cb2b4582178fa5978a23cfc56fc",
+          "tokenizer.json": "92643f0b96dc9023f54e1b4ccb711372ccf08ce8a2536264ffd16cadb5147fb4",
+          "tokenizer.model": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+          "tokenizer_config.json": "498532681b66c6b2596b52d857f986e85e1623e35a7bb9b5c4f9432732ec9acc"
+        },
+        "tokenizer_class": "LlamaTokenizerFast",
+        "algorithm": "BPE",
+        "vocab_merges_sha256": "59b2412004fe619a5d3ed67258eef39105fa3aa1e20c6ea4bd46ca7ed416ab25"
+      },
+      "literal_ids": {
+        "]": [
+          5477
+        ],
+        "],": [
+          12820
+        ],
+        "], ": [
+          12820,
+          29473
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          ""
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        12820
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        14771,
+        1501,
+        29508,
+        1949,
+        8177,
+        1501,
+        29508,
+        29561
+      ],
+      "context_continuation_example_ids": [
+        14771,
+        1501,
+        29508,
+        1949,
+        8177,
+        1501,
+        29508,
+        1949,
+        8042,
+        1501,
+        29518,
+        29561
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 22
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 19
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 57
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 35
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "cl100k_base",
+      "family": "tiktoken cl100k_base",
+      "provenance": {
+        "library": "tiktoken"
+      },
+      "literal_ids": {
+        "]": [
+          60
+        ],
+        "],": [
+          1145
+        ],
+        "], ": [
+          1145,
+          220
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          " "
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        1145
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        62786,
+        510,
+        16,
+        1145,
+        14596,
+        510,
+        16,
+        60
+      ],
+      "context_continuation_example_ids": [
+        62786,
+        510,
+        16,
+        1145,
+        14596,
+        510,
+        16,
+        1145,
+        10463,
+        510,
+        17,
+        60
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 15
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 8
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 52
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 28
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 13
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    },
+    {
+      "tokenizer": "o200k_base",
+      "family": "tiktoken o200k_base",
+      "provenance": {
+        "library": "tiktoken"
+      },
+      "literal_ids": {
+        "]": [
+          60
+        ],
+        "],": [
+          2155
+        ],
+        "], ": [
+          2155,
+          220
+        ]
+      },
+      "decoded_literal_pieces": {
+        "]": [
+          "]"
+        ],
+        "],": [
+          "],"
+        ],
+        "], ": [
+          "],",
+          " "
+        ]
+      },
+      "distinct_merged_continuation": true,
+      "merged_continuation_ids": [
+        2155
+      ],
+      "records": 21,
+      "mismatches": 21,
+      "boundary_mismatch_rate_percent": 100.0,
+      "context_native_example_ids": [
+        100151,
+        723,
+        16,
+        2155,
+        22582,
+        723,
+        16,
+        60
+      ],
+      "context_continuation_example_ids": [
+        100151,
+        723,
+        16,
+        2155,
+        22582,
+        723,
+        16,
+        2155,
+        15314,
+        723,
+        17,
+        60
+      ],
+      "details": [
+        {
+          "case_id": "repair_000",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_001",
+          "mismatch": true,
+          "first_different_token": 14
+        },
+        {
+          "case_id": "repair_002",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_003",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_004",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_005",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_006",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_007",
+          "mismatch": true,
+          "first_different_token": 18
+        },
+        {
+          "case_id": "repair_008",
+          "mismatch": true,
+          "first_different_token": 8
+        },
+        {
+          "case_id": "repair_009",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_010",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_011",
+          "mismatch": true,
+          "first_different_token": 9
+        },
+        {
+          "case_id": "repair_012",
+          "mismatch": true,
+          "first_different_token": 16
+        },
+        {
+          "case_id": "repair_013",
+          "mismatch": true,
+          "first_different_token": 13
+        },
+        {
+          "case_id": "repair_014",
+          "mismatch": true,
+          "first_different_token": 50
+        },
+        {
+          "case_id": "repair_015",
+          "mismatch": true,
+          "first_different_token": 12
+        },
+        {
+          "case_id": "repair_016",
+          "mismatch": true,
+          "first_different_token": 28
+        },
+        {
+          "case_id": "repair_017",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_018",
+          "mismatch": true,
+          "first_different_token": 11
+        },
+        {
+          "case_id": "repair_019",
+          "mismatch": true,
+          "first_different_token": 4
+        },
+        {
+          "case_id": "repair_020",
+          "mismatch": true,
+          "first_different_token": 12
+        }
+      ],
+      "not_an_inference_deadlock_proof": true
+    }
+  ],
+  "failures": [],
+  "original_audit_sha256": "fb2544e326397d61bb575a1a7d47c054f4c12bc687a3f360f4ba493be6df175b",
+  "all_results_recomputed": true,
+  "interpretation": "Segmentation mismatch, not a universal model deadlock proof.",
+  "publication_note": "Real-answer token sequences/windows withheld with source text; synthetic Alice/Bob context IDs, literal IDs, all 21 mismatch decisions, counts and config digests retained."
+}

@@ -1,31 +1,24 @@
-# Data and model asset policy
+# Data, models and publication policy
 
-## What is distributed
+Distributed: dated research code, all aggregate metrics/intervals, anonymous per-question numeric sufficient statistics and attribution counts, tokenizer literal/synthetic IDs, settings, counts and hashes. Numeric supplementary data reproduce points/Bootstrap without source text.
 
-Research source, synthetic examples, aggregate metrics/intervals, counts and hashes. No retrieved passages, raw dataset rows, question-level model outputs, blinded human materials, teacher logits, model or adapter weights are bundled.
+Not distributed: credentials, server addresses/private paths, SSH/auth helpers, raw questions/passages, full generated answers, gold alias lists, real-answer token arrays/windows, model/adapter weights, cached logits, raw logs/archives or manuscript submission packages. Public visibility does not override upstream terms. No project open-source license has been granted.
 
-The release manifest states original and exported hashes. An aggregate result file may be filtered to remove example-level labels/IDs, while preserving numeric summaries; that is a distribution transformation, not a rerun. Result summaries alone are insufficient to recompute question-paired bootstrap without the original paired examples.
+Exports redact machine paths and text-recoverable actual-answer token traces. Tokenizer literal/synthetic Alice/Bob examples,21 mismatch decisions and original/config digests remain. Original/exported SHA distinguish release transformation from experimental reruns. Hidden text extraction cannot be independently validated from hashes or numeric sufficient statistics alone.
 
-## Upstream resources
+## Splits
 
-- [ALCE](https://github.com/princeton-nlp/ALCE): upstream citation benchmark resources and QAMPARI/ASQA retrieval data. Obtain its data using the upstream instructions; consult applicable data/source terms, not only the repository code license.
-- [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B): acquire separately, preserving tokenizer and generation configuration. Consult the model card and its license.
-- [DeBERTa NLI checkpoint](https://huggingface.co/MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli): optional exploratory judge; fixed revision `6f5cf0a2b59cabb106aca4c287eed12e357e90eb`. Not the official AutoAIS model.
+Internal ALCE/QAMPARI-derived partitions, not official leaderboard splits:350 training, reused development,311 formerly sealed questions. Exact-ID/normalized-question overlap checks passed; semantic near-duplicates, document overlap, pretraining memory and unknown historical sources are not certified.
 
-No upstream repository or model is vendored/relicensed here. Raw retrieval inputs must not be reconstructed using gold reranking when claiming realistic retrieval performance.
+Full311:141 positive-support and170 zero-support questions,484 groups. Multi85≥2 groups; Sparse2260–1 groups. Reused multi45/raw24 have45/176 and24/8; Raw24 is not threshold-identical to Sparse226 (one ≥2-group question). No output-based filtering.
 
-## Split boundaries
+Main study: internal preregistration,12 frozen systems/3732 generations, no new training or checkpoint selection. Later baseline/Mistral comparisons use already unsealed311 data: supplementary held-out evaluation, not another blind test. No human semantic annotation is claimed.
 
-The pilot partitioned material from an official ALCE evaluation source into its own train/development/sealed groups. That is disclosed internal development, **not official leaderboard evaluation**. Latest350train, original80dev and raw80dev are disjoint in exactIDs and normalized strings; semantic near-duplicate/document overlap is not certified.
+## Upstream and required assets
 
-Both80dev collections have been repeatedly inspected. The latest-version311sealed collection has zero model predictions in this snapshot. Do not tune variants on it or equate old-version runs with a newly frozen final confirmation.
+- [ALCE](https://github.com/princeton-nlp/ALCE): obtain data under upstream data/source terms.
+- [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B): official Base; owner-compiled labels/adapter assets separate.
+- [Mistral-7B-Instruct-v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3): exact revision/files in model identity JSON.
+- [Historical DeBERTa screen](https://huggingface.co/MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli): exploratory automatic screen, not official AutoAIS or human evaluation.
 
-## Prepared labels required by current training
-
-The native-consistent training rows include `id`, `prompt`, `short`, evidence `edges`, `has_trajectory`, `completion_pair`, `action_decision`, `terminal_decision`, original `generation_token_ids`, `failure_local_retention_mask`, and prompt/response cache SHA metadata. The compiler audits350rows/150active/72native sites and exact positive-path conflicts.
-
-These include tokenizer/model-dependent states, not ordinary SFT prompt/completion pairs. Synthetic examples demonstrate scoring/repair concepts but are **not substitutes for these prepared training rows**. Historical replay compilers assert exact input hashes. Different prepared data require a new, declared experiment protocol, not removal of audit asserts to force a run.
-
-## Access and reuse
-
-Private archive access is a separate owner decision. Do not publish original examples or model adapters before reviewing upstream conditions and manuscript anonymity. The repository's lack of an open-source license does not alter upstream obligations.
+No upstream resource is relicensed. Gold is used in training compilation/evaluation, not inference. Lexical alias support can be relation-insensitive or incomplete; known inventory exhaustion is not semantic evidence exhaustion.

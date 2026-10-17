@@ -1,0 +1,662 @@
+{
+  "date": "2026-10-17",
+  "base_commit": "b2cc1becf38e1754776db7bb742c9b265f09b460",
+  "privacy_policy": "No credentials, raw questions, passages, generated responses, model weights, or logits.",
+  "frozen_source_experiments_modified": false,
+  "files": [
+    {
+      "path": ".env.example",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "67660243ea379d3ebfedb3517d56d6beecbed9d12b7072e691b1a1a1d42dd149"
+    },
+    {
+      "path": "CITATION.cff",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "7be710aef71ae03e629e802890d3b10fa854fff61f60db470b1f88596632b492"
+    },
+    {
+      "path": "README.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "79a5a124cda049c91adbb6284bf659cfefa4df21430ed1f32d091d907f633bf5"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "9876502b711d991b357c394d31ff6c7b07b4f055ea4649859c087a52e5fe917a"
+    },
+    {
+      "path": "SECURITY.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "db4c4c7687ee5b5da8279b25f83190cf1d285a31a939f671f52ccd381aa9726e"
+    },
+    {
+      "path": "docs/DATA.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "1a6d75052dc3c9d8063b789102f349a78cd5f15d57628f1b8d0ca48fc92e4397"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "6d3c11f0627b408c107216507b117f9145e2cf092b9e744298a6ee710da14e57"
+    },
+    {
+      "path": "docs/EXPERIMENTS_20261011.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "983b587b14d8bc07e5a678728c32a6cec94efe4b550587a1abecbdae2978f45c"
+    },
+    {
+      "path": "docs/HISTORY.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "43634dbde377b06cecdf63272c33bfbe438b0f7fcb1364289f8f5e25c0200bc4"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "090d5f894db8f6be708e7a45459c40de1064d3a6aabde3ff9f9655875ca6c0d5"
+    },
+    {
+      "path": "docs/METHOD_20261011.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "8a8873ab79563d04eb5d047eaea0b27b5ee99570d3ca038cdac6bb3d6ce7d6ca"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "92101dc791bb91642add4a255fc2888725e2738989d543d38a352d4f3afda005"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY_20261011.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "fb7f12f27fa23e53b5be79a91a03e8eb2773d526826318d60e6bbc189fb57f91"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "9a72ccbc657447a330cbb1f9747f50d0443c330e0966533f7fd7c2066df1708d"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "43be1ffc3095e7941ffa2eb1d8d42012464a63350b393f562cb75c2054628518"
+    },
+    {
+      "path": "research/supplementary_statistics_20261017.py",
+      "sha256": "ed5621a052d64b854db5d74881f21562b0dec81dac1109356b459edde79717c2",
+      "transformation": "Exact AST-selected function bodies; dropped GPU/runtime imports, not altered estimators.",
+      "source_file": "equal_rag/analyze_heldout311_20261015.py",
+      "original_sha256": "79a8e91f270420c84d01864a51207f91bb0845d5f9cc790605843059dc8b542f"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_heldout311_20261015.py",
+      "sha256": "2ceb15974d4ed0d24ec0fb1477e8d72116efe4584e282a9096352c415bf1c543",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/analyze_heldout311_20261015.py",
+      "original_sha256": "79a8e91f270420c84d01864a51207f91bb0845d5f9cc790605843059dc8b542f"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_qwen_base_entity_abc_20261015.py",
+      "sha256": "b877be9c742fd77b512f7f174a2de838af86925158d918ad9de5c89b18a0ac9c",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/analyze_qwen_base_entity_abc_20261015.py",
+      "original_sha256": "62fc36ac9dd00b04c2fc36fd927bf314dd6d08e6b758a6f466d6ab0003db5f28"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_seed_ablation_20261015.py",
+      "sha256": "8349a328ad291222591f805f1a0205ad61c50adfb0b89f41a8985f6a32e5c0f9",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/analyze_seed_ablation_20261015.py",
+      "original_sha256": "d757af8e0acfb16292f9424039bf750409232dfbf5cb779b5f6d9858ca2b17c6"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_supplementary_v3.py",
+      "sha256": "55c6671aafee69892dc2a6a896cc5a83c4ea3e4fe0e9faf229bb0929033abc76",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/analyze_supplementary_v3.py",
+      "original_sha256": "0ec87d67204398d07e36e53b28f3274996c8bbb2c5e628484ea854ceb9f0ad80"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_tail_fidelity_20261015.py",
+      "sha256": "b4ca160973cfbf4d3d85b0e5b3eb4666efc51860b949416bb63330b6c27b34f1",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/analyze_tail_fidelity_20261015.py",
+      "original_sha256": "0f0cc1ef283acb4c71f218ef58176c93a52be540a7d33c0384eb77fd4afe2617"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/analyze_tail_open_suite_20261015.py",
+      "sha256": "b37e4b98af07529dad7e2122a508bf8da2d3308717d6d2b5b79c896f05b04182",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/analyze_tail_open_suite_20261015.py",
+      "original_sha256": "9aa6b87a8379af9285b748346c3eb9b9e9cdd5b90181cbafb26a0823b5c19a8a"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/audit_qwen_gemini_20261014.py",
+      "sha256": "f6e8c48ab293817bf7fefa5ff845d2e86e833ea17b90ff01b837d745a4b22dca",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/audit_qwen_gemini_20261014.py",
+      "original_sha256": "e2f8417d78e66f9dac7b3b9a754097c177a09d4978c9954c83674205eb85e70a"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/audit_qwen_gemini_next_20261015.py",
+      "sha256": "5e287a681777b4e503ad994f69f3181aa8e835889952d976de1f57ff7003b143",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/audit_qwen_gemini_next_20261015.py",
+      "original_sha256": "e899351017646e598efd63b9516b22fba177f210c13867ed1f55524a5e0b14e7"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/closeout_tail_fidelity_20261015.py",
+      "sha256": "b4762cba38ffe3c0ec48e2e257061807214ad77f51f00ee01781c59287ff5a30",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/closeout_tail_fidelity_20261015.py",
+      "original_sha256": "1abd6354041da3b1c6239401802cf9acc6a07e32fbfbff7831a3dc0967cfeab9"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/closeout_tail_open_suite_20261015.py",
+      "sha256": "64da9db1d76d25d281ac0383e8354e3320f819c209a886c226704b0b66dd3ea9",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/closeout_tail_open_suite_20261015.py",
+      "original_sha256": "7326c11319535172d78ec131eb2d5846a1d25f072c0f409e06773762430ef164"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/compile_qwen_coherent_span_20261012.py",
+      "sha256": "61c70fd8e2ab02b6c9d0511600b2c054a18236766bb4db4df6cdf8ed2d88c10f",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/compile_qwen_coherent_span_20261012.py",
+      "original_sha256": "8474c26ccd2e74fa84105c77142ede271261a2fa67c94faeb1d623f3d4824e7c"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/compile_qwen_projection_gate_20261012.py",
+      "sha256": "ee2a214e3e0823ea60a59ffb0b31a6e22d749198a50cc5d31a06ed2892590f6c",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/compile_qwen_projection_gate_20261012.py",
+      "original_sha256": "7c5b77d5f062d092ae96d88b73dd8518f8e9d5aefbde03547164fb05ae975877"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/completion_pairs_20261010.py",
+      "sha256": "184700d32b505a336f198b3eb5dc8acfc78a7d42e0992a0cde1e50ea212ccc7b",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/completion_pairs_20261010.py",
+      "original_sha256": "9a1cbfb4dd880ddb1bce0e5504ec0ff8985f2b8b711a9cfa770dd90e5f30b012"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/diagnose_qwen_projection_gate_20261012.py",
+      "sha256": "705201f83e1c482dcc810530dda04b2e1950ad431b904405c1b73b95237c590f",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/diagnose_qwen_projection_gate_20261012.py",
+      "original_sha256": "1408d200be877a8f95ef0fbb0f7a4fa62c5fe0297113f6f5926f9742bfbee22a"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/entity_abc_contracts_20261015.py",
+      "sha256": "a08b768280bc0d5b9ac4acccf5554588cc77ce784e6dafdf4164fcefe838dbf4",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/entity_abc_contracts_20261015.py",
+      "original_sha256": "f3060d2e8527e1313abee7e3e7aa837acdc62de8e3cb304583d96e8c9fe72c7d"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/eval_qwen_equal_curriculum_transfer_20261015.py",
+      "sha256": "9e4be4f43c6b62e00cf9bcd04f6747aa2e54616a82d524f30356a57206428e07",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/eval_qwen_equal_curriculum_transfer_20261015.py",
+      "original_sha256": "ee733abfc6f75f3fe1d016aea7b59e2691fa83dfa184f6f03bd5c426e1e434dc"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/eval_qwen_gemini_span_20261014.py",
+      "sha256": "3076d139d978fd05286ddad7834248916eaf9a4f09cafd1e8b82f5bca93f9ddf",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/eval_qwen_gemini_span_20261014.py",
+      "original_sha256": "f1fcd328b017627b782632848e11e30c1fed3265ea4d112e2a3d67a05de462d3"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/eval_qwen_recovery_controls_20261012.py",
+      "sha256": "53b8413f4de42aedefdaef5f4b279dc3fdf046e6cc9b4e2084ce8e9d93befae4",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/eval_qwen_recovery_controls_20261012.py",
+      "original_sha256": "496e97f4d2a1cfd547cdf076280113c46ba2275fae77aa8a412e3ff1069c7c06"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/eval_verified_outputs_20261010.py",
+      "sha256": "c397c74d650a2796dcafe0e0df2b4b503a3d4449ad455c690b24f446d369af7f",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/eval_verified_outputs_20261010.py",
+      "original_sha256": "f0b61ef1f732655e62d5ad89ef331b25ed44b183adb54467810477a4430ecb95"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_base_entity_abc_data_20261015.py",
+      "sha256": "bcf7304f1b2a00320d682a922eaead6fc306628631af72ff08b8d9dc90a9ef98",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_base_entity_abc_data_20261015.py",
+      "original_sha256": "f9d34769415ef30e5ad497ce3b5074aa8a78d7d8c3a75270a706c23180c8898d"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_base_entity_abc_eval_20261015.py",
+      "sha256": "d2dc02733474a4be3a1959bae3b4e3f6de93390f3a2679309e5faecd3779fca1",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_base_entity_abc_eval_20261015.py",
+      "original_sha256": "4d380365683cf03c9ec0c5cf5e38680ef1dc121abc85c9d7cb91fc2f751fbe65"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_base_entity_abc_train_20261015.py",
+      "sha256": "68a25ba33534ba682917ae3b011e3bba949fa49abab588f79abb97ad5f3e8bbb",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_base_entity_abc_train_20261015.py",
+      "original_sha256": "30f3cce93f5b43f56e1e711e8d8a323d1d5e1d79f02c9bca774153b657856b30"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_decision_recovery_20261012.py",
+      "sha256": "27a0e8848904df08e0e19b963d46d92e5e19aafcc05249e067e300034c9f423e",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_decision_recovery_20261012.py",
+      "original_sha256": "c0e5fe3b308caa784ad47e05451a714511190a811ec6aeb187fd5465cd56f3ca"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_equal_curriculum_20261014.py",
+      "sha256": "e8b85c2fd65db8762739b592cf9352cb8c1afb4cd0992411d1114b7a3f1c4c79",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_equal_curriculum_20261014.py",
+      "original_sha256": "04f55036e2f813b0c047e738243dc8bdfd2a2325f135882b40d4575b9b470f19"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_equal_format_controls_20261014.py",
+      "sha256": "24f4306aed508fbfefac7e71e116a2f35956fc3b9d7ef7d608c0647aa24f1e83",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_equal_format_controls_20261014.py",
+      "original_sha256": "8a5c61cad338e9c5449449938acad14201b2d040c62a5acb7c6f8bdca2f3bd38"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_equal_graph_20261014.py",
+      "sha256": "b287abb122e03758477d67b61ec422320efda907431dc9b8f9e0ca16a20b4584",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_equal_graph_20261014.py",
+      "original_sha256": "a6ec3d46927b4c590fec748745f1ba5026d9e770f6fbc481065243520abecea3"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_gemini_native_span_20261015.py",
+      "sha256": "590c06b254ace478589a0fd30910b9624369309b1e3a7b9cd38e36f4c6fa1c09",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_gemini_native_span_20261015.py",
+      "original_sha256": "5bed24ad38ad8d96d6d706b07e8e62e3ee96fe9a8283733ed45d9678ef07a5a2"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_gemini_span_20261014.py",
+      "sha256": "7ea4d5af49fcaebf63dfa120ed1675f0f2bb7f503ce7ebe579906a1e720997db",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_gemini_span_20261014.py",
+      "original_sha256": "8c6d5115cc0c613abbc93ad07882aeaa93ab470120d10dbf7a88267c9326cb9f"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_heldout311_20261015.py",
+      "sha256": "b2586ca5e525b068a666e0cb4438c30cc379f583682e4b1ae94f6ba6032a1ab4",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_heldout311_20261015.py",
+      "original_sha256": "5ca1074dba584fb193ef756a5cbf6e41c1b7c4252b447d3aeb5650dd39aa376a"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_pair_aonly_20261015.py",
+      "sha256": "48ee23172c2f28db6b24232aa471b13153f0d0c826f944be90d22272b16dec98",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_pair_aonly_20261015.py",
+      "original_sha256": "5d64b45344ca08e97f55b01e579d625de98bf77417ea093575088f6521e3e5c0"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_seed_ablation_20261015.py",
+      "sha256": "86ea9619fa536db3a0cccb180185f0e18ea7e3981f7de1cb7c17a48cab28b3dd",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_seed_ablation_20261015.py",
+      "original_sha256": "0914a853503df5ff82f77c54c9b173411e15d5841a07f07c1d1a5439cb1c51f9"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_tail_fidelity_20261015.py",
+      "sha256": "2cab36de7a0e48673c275997b1e4b8d342a280a9811fb598d268cf5dd49da533",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_tail_fidelity_20261015.py",
+      "original_sha256": "7dbb3a07d604eea0fc5d1e97b6f5313eddc259ff13a6bfe3f575b1deb7ef57b0"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_tail_fidelity_v2_20261015.py",
+      "sha256": "a583a3dae801777d6f93e7b36e5463acea2acfa9f1a1b771033c35f91d55617a",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_tail_fidelity_v2_20261015.py",
+      "original_sha256": "f4d94b891f2b48ff81b35983cfb0a4611866a033c7c311442cd0b900f42195b2"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_tail_fidelity_v3_20261015.py",
+      "sha256": "244d2c880d4a8697b6068f9039e2a21e839fcc722e7ce58d5a26ec02a5efcaa3",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_tail_fidelity_v3_20261015.py",
+      "original_sha256": "492ce7b634053d708846366a709feb01e6e00d4299f83a95855b5384a99c0221"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_tail_guard_scan_20261015.py",
+      "sha256": "8d88cf38287e020459739396a30672a8297217226ac4e7e52e2929e657822bc4",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_tail_guard_scan_20261015.py",
+      "original_sha256": "4eeb7d8c43d80c133839694ba07afe5e66f1528229ca4b962d6dd3660dc19862"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/qwen_tail_open_eval_20261015.py",
+      "sha256": "dbf212e40c0a134d0bba31a81ac9902c5c60a531e37f990ada834aaf7e661f52",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/qwen_tail_open_eval_20261015.py",
+      "original_sha256": "f2dd67b9b952867fe48149e3720fde903024924efd1322e46542c55dede6af32"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/release_paths.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "170412817551ab8d84052248a8596d53a7cc214755d59438e64acd9c789e7440"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_matched_baselines.py",
+      "sha256": "aa5662e5ae3ff138d7b7f8540b928a10958f1fe6ba0f2526ff466f89a2bd6d26",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_matched_baselines.py",
+      "original_sha256": "ea9b943d55fc32239f7b928345df3e4a940fdb0138c351c1c7d05dbc5344b360"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_package3_pipeline_v2.py",
+      "sha256": "3c1d04714a776802d8ec39a7be3c6bb58f2f73f8df2ed4ec0a90f3c4ced2c030",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_package3_pipeline_v2.py",
+      "original_sha256": "91fbb78cff46a73d744cc87f0fce47565ea6337303ace823aff3711d1ed5df2c"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_package3_pipeline_v3.py",
+      "sha256": "167d8700cb7a56aa80359189f5f7feafd272364da7c9a8172542d068c92de563",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_package3_pipeline_v3.py",
+      "original_sha256": "3a05e1411bbd60e86c35ea0378a16d4b5979e9da35b76eebd159ed7a5b91caa8"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_qwen_single_v3.py",
+      "sha256": "1cc92f67c614473b7b9ac14797deafa292f6b96f62d1511a934bb225ea72501e",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_qwen_single_v3.py",
+      "original_sha256": "66aad9b07f95781bae7b1a16ecb4fd2b813a0af06a0fd4c21bf2ce7357dd001f"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_second_backbone.py",
+      "sha256": "0e585680ef511cda5c3d668f6f2dab19d1822046973bc9f1d0d427f73cccc80d",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_second_backbone.py",
+      "original_sha256": "0288987b6af4f6af05b35ac37b0cdf78053a9707cdcffef79feaf47731bb1d2c"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_second_backbone_v2.py",
+      "sha256": "f4c0589a068f58e8ca0ada3c2759b897af47bb232022352ba08ad6029023007c",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_second_backbone_v2.py",
+      "original_sha256": "1aeda38b439c3064f369dfb2d727acfcba6c04feefc0499da4f7349fe7ad763c"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_second_backbone_v3.py",
+      "sha256": "f3f107b23ae1bbf3e5079c22a642fbe0ba41ac8c3c1cbda99247f7d60ddced2e",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/run_second_backbone_v3.py",
+      "original_sha256": "21e65ba4ba34f483f8466818cf1271978e833ffa469a3061124f12ccf7bd2b56"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_tokenizer_boundary_audit.py",
+      "sha256": "588a781677ed3a38d4b09edf9c5ebcd2f73e7079dd23b650afe731009887a323",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/scripts/run_tokenizer_boundary_audit.py",
+      "original_sha256": "33bedc4970e63b21c72eec679be3ba558567b3c855e76c1f52e4611df1547ab6"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/run_tokenizer_boundary_audit_v2.py",
+      "sha256": "3121e825025ba00bf0121e579627b5df81562effabef0bc859fde0e5b607a65c",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/scripts/run_tokenizer_boundary_audit_v2.py",
+      "original_sha256": "d8cd0c99b136913bf783fc46fb5dbcf48a05602b9f18fd5842b73c200c60e59b"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/score_strict_units_20261010.py",
+      "sha256": "42320becfaf1b8c3f74e7f5aaaffb3e877ccc8e177a8c5a88298d7d7df74b963",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "equal_rag/score_strict_units_20261010.py",
+      "original_sha256": "3e67a305cbc2ab8d1b58ba8ea784b07ace49fa2f7c89970f2360fcb2e5c42136"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/single_gpu_runtime_v3.py",
+      "sha256": "d5072ad0637479a7e78726c36d6288984ac47b42aad985e7c6c8ece041cfcb84",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/single_gpu_runtime_v3.py",
+      "original_sha256": "5c4282bf7653aed99a591fff95c3f13ad7498e7de5bc345af67e81f143f66255"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/suite_common.py",
+      "sha256": "83aa35aea3c4cc3fa6a8ee4b02ffef35a0059ea5296511dc6263bcc075693f06",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/scripts/suite_common.py",
+      "original_sha256": "4d0ca0de64c6e11442ab2fb7d9c7c88c839e881fec0a24a033f1b354586d6e97"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/supp_runtime.py",
+      "sha256": "ca78f4cbc520c3d71a17ef8e92da6e34e47a0280b2f7f5cef7ca52305362036e",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/supp_runtime.py",
+      "original_sha256": "cca4895e171e7b7bc803a170b3627acfc8c26d8f9caf933add161e0f6bc3b1ef"
+    },
+    {
+      "path": "research/trajectory_repair_20261017/test_supplementary_v2.py",
+      "sha256": "3aa917dc8125506907203665ae38eb0e94e82c4e35136b60f1e04ad15c0fc759",
+      "transformation": "Portable path expressions only; original/exported source hashes retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/scripts/test_supplementary_v2.py",
+      "original_sha256": "a9c7c7e97c42bfea021d68186f41bff95e7f35615826a4321fb1a99b056aabe0"
+    },
+    {
+      "path": "results/README.md",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "4bb3a4337edf05e141d54e21c11516f5ed2d00209a8d91762a13848b032a2b85"
+    },
+    {
+      "path": "results/heldout311_20261015/summary.json",
+      "sha256": "07f8750b321e5e613a584d1b64c94eab649fe903b5f5f08baa8330986c6eb726",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/qwen_heldout311_20261015/verified/run/analysis/summary.json",
+      "original_sha256": "644eeb0811382cc8d93a95b72afebf232453ebfd28c3cf5a82a3908182e367c7"
+    },
+    {
+      "path": "results/multiseed_ablation_20261015/summary.json",
+      "sha256": "ea208d11895e7942a2ab8ed62919ff35e5891b2d44692be4b0684bd443eb6839",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/qwen_seed_ablation_20261015/verified/run/analysis/summary.json",
+      "original_sha256": "9c57a0f469aea15a22a8d709804d93a2f46a5fe49df4741cefa904aa2fced366"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_HELDOUT311_FINAL_RESULTS_20261015.md",
+      "sha256": "657dac750156adcd03db899c6734eb6d977d85d3bd4746fec2d9a1e9b4572092",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_HELDOUT311_FINAL_RESULTS_20261015.md",
+      "original_sha256": "d421e0cfb9cdf3ddc42d9791024f3506c1215f718c48aa21c9249c6047bd127d"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_HELDOUT311_PREREGISTRATION_20261015.md",
+      "sha256": "2726fa7f5e7cca2e42980089ee169dd6a7dedcf0feebafff68ce01b33112eab9",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_HELDOUT311_PREREGISTRATION_20261015.md",
+      "original_sha256": "2726fa7f5e7cca2e42980089ee169dd6a7dedcf0feebafff68ce01b33112eab9"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_HISTORICAL_SPLIT_CORRECTION_20261015.md",
+      "sha256": "d8ebdfa1c50a528824e8527084f5f60ca0f958f32a8f8e7d984ecd1d0f7ba20e",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_HISTORICAL_SPLIT_CORRECTION_20261015.md",
+      "original_sha256": "d8ebdfa1c50a528824e8527084f5f60ca0f958f32a8f8e7d984ecd1d0f7ba20e"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_MULTI_SEED_ABLATION_PROTOCOL_20261015.md",
+      "sha256": "49fc482bdc1298ce25b2492348a030353789cea796febf24328e32ae5730c856",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_MULTI_SEED_ABLATION_PROTOCOL_20261015.md",
+      "original_sha256": "74b7f511997fa774ef0c0eadcf4e33df5acc3428816e20bdedc6e6e39b4ce59b"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_MULTI_SEED_ABLATION_RESULTS_20261015.md",
+      "sha256": "a7655a1930c33b2da1d33ae6ebc1e5c73248063ae3d0293c76aa55203e81a2a9",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_MULTI_SEED_ABLATION_RESULTS_20261015.md",
+      "original_sha256": "add6b688cbf503f2c9e62b521c371654401ee172ed43fcf24c1c99171d9b4f79"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_OPEN_EVAL_SCAN_GUARD_RESULTS_20261015.md",
+      "sha256": "1b1aed2e71e68bffad5ae75f44d0dd5a93de1cd466ca45fbf8f25c98cbcdf032",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_OPEN_EVAL_SCAN_GUARD_RESULTS_20261015.md",
+      "original_sha256": "783bc5ba8080ac31faab393a89630eee8ff30f5e73b1d6b7518a21016804ad32"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_PAIR_AONLY_RESULTS_20261015.md",
+      "sha256": "44770f1dd3e7499993dbe4b0f1a2622b456dcb71d348912c05651c088fe4ed99",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_PAIR_AONLY_RESULTS_20261015.md",
+      "original_sha256": "774f35e381cc6350f479790ee7b146f30b804d1910f7d9b7605cf48e3f90a45e"
+    },
+    {
+      "path": "results/reports_20261015/EQUAL_TAIL_FIDELITY_RESULTS_20261015.md",
+      "sha256": "e6ab82a4ab7085ee306c5b4a82b77c2c79f093e3cb76ef4dbd4d8be3ce18e4e0",
+      "transformation": "Historical report, private paths redacted; not superseding latest baseline conclusions.",
+      "source_file": "EQUAL_TAIL_FIDELITY_RESULTS_20261015.md",
+      "original_sha256": "a7527613e7ce4bec9be972fbf465d9c2166ee3f9f674589fc071f2b2d6f1f5b2"
+    },
+    {
+      "path": "results/supplementary_20261017/EQUAL_SUPPLEMENTARY_RESULTS_20261017.md",
+      "sha256": "37aa210d6223add941ab79404800402edde188a0ee3f2bd418144ec0258e8450",
+      "transformation": "Private machine paths redacted; all tables/numerical results preserved.",
+      "source_file": "EQUAL_SUPPLEMENTARY_RESULTS_20261017.md",
+      "original_sha256": "e58d9783cf456bfaf294d903a57d24103176d52115e04e0f6c5fb72251738c70"
+    },
+    {
+      "path": "results/supplementary_20261017/HARDWARE_NOTES.md",
+      "sha256": "c50348c80c04e17f9b310eeb822d43193d1982cd8dca209ad32a92f803d7e0ec",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/HARDWARE_NOTES.md",
+      "original_sha256": "c50348c80c04e17f9b310eeb822d43193d1982cd8dca209ad32a92f803d7e0ec"
+    },
+    {
+      "path": "results/supplementary_20261017/SUPPLEMENTARY_INTERPRETATION_20261017.md",
+      "sha256": "1cf1f66979a491b315f209ec1e44a44c3e9ac9584c97b31f5b88fe101b266e82",
+      "transformation": "Publication-safe copy of conclusions; no numeric changes.",
+      "source_file": "artifacts/supplementary_20261017/SUPPLEMENTARY_INTERPRETATION_20261017.md",
+      "original_sha256": "1cf1f66979a491b315f209ec1e44a44c3e9ac9584c97b31f5b88fe101b266e82"
+    },
+    {
+      "path": "results/supplementary_20261017/archive_transfer_verification.json",
+      "sha256": "538b6d60499d470d72c1e77d898181c4cbefd8058ab524808ea5e1682a4eb94d",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/archive_transfer_verification.json",
+      "original_sha256": "4a4b512b27d19044ffefac3a70afbf0f02d8ed68262344076fbac1555613ba07"
+    },
+    {
+      "path": "results/supplementary_20261017/execution_replay_consistency.json",
+      "sha256": "926774fa5ff0b8c5d5b3290fb163302b78a7be9356acda81c89f90ae66b3afb3",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/analysis/execution_replay_consistency.json",
+      "original_sha256": "215e2f630b1c1f515881fe968106ca5e7559b2b4ce0b1b47ae42e3343f7d70b9"
+    },
+    {
+      "path": "results/supplementary_20261017/local_protected_after.json",
+      "sha256": "102fabb584a097abd5740c4d163f93b2a87b82c96cd60e22db2e4436ba3cef26",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/local_protected_after.json",
+      "original_sha256": "bd91a91069e124abc3d21788bcfae65f495d9c56aa0da3d9f521df05e21da7bc"
+    },
+    {
+      "path": "results/supplementary_20261017/local_verification.json",
+      "sha256": "90fa3df69cbf1a38c7b991110b84f70d51090ff827ca503e9bb9df56657f4b63",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/local_verification.json",
+      "original_sha256": "69e54c872e25cf05716fc4839bba6cf355a247ddad9181b1f7f66a83dbbc30a3"
+    },
+    {
+      "path": "results/supplementary_20261017/package2/question_statistics.json",
+      "sha256": "deee2ff84b8b8059e2e94fe853df10943f3b67fa56c30f42d2e24e82fc3523e9",
+      "transformation": "Numeric sufficient statistics and ledger COUNTS only; no prompts, outputs, aliases or source IDs."
+    },
+    {
+      "path": "results/supplementary_20261017/package2/summary.json",
+      "sha256": "cd2e4132e909847c23445de176bf5d7d252e4ad7239b4a2deace941e36eb088a",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/analysis/package2/summary.json",
+      "original_sha256": "57c00cdf6fe6b1817545d9c6d2a5ce8fd3290e9120d3797800cbac4a7f4bdc9c"
+    },
+    {
+      "path": "results/supplementary_20261017/package3/counts.json",
+      "sha256": "b3813496d6418273f0c274aa0febaf7e5cfbe43ebab77a9dd891ee589bb61f72",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/package3/compiled/counts.json",
+      "original_sha256": "e2e7d82e186d6e38e2f268a69d1de0e9e364b6b8a1553b35ca5d82e0f09eeec6"
+    },
+    {
+      "path": "results/supplementary_20261017/package3/model_identity.json",
+      "sha256": "ec54d9886df8fa0d0e625ab4eaa7a722e540e2749a2a4fa27db7394631939399",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/package3/model_identity.json",
+      "original_sha256": "d08df9d5067926b1caa935e5adc444d379fedcf4196c5d7658173797046a175a"
+    },
+    {
+      "path": "results/supplementary_20261017/package3/question_statistics.json",
+      "sha256": "d2474f1ee72fb8ce3e23c23f0c1108b1c5c513aa421691d0a9708012a427061b",
+      "transformation": "Numeric sufficient statistics and ledger COUNTS only; no prompts, outputs, aliases or source IDs."
+    },
+    {
+      "path": "results/supplementary_20261017/package3/summary.json",
+      "sha256": "ecf632efcf4ff4a91ec04c8884a0cde06c663aecd664c63f49f167e2834ae54f",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/analysis/package3/summary.json",
+      "original_sha256": "464f88d3cf0e61ffcb63d51813be027fb1966fac1b0182c5ccd62590ff77934c"
+    },
+    {
+      "path": "results/supplementary_20261017/package3/training_diagnostics.json",
+      "sha256": "647562414838ef5de63eac74725eeb23d86bf575820488c6f93be77e61aa9ca8",
+      "transformation": "aggregate or numeric-only export"
+    },
+    {
+      "path": "results/supplementary_20261017/tokenizer_boundary_audit.json",
+      "sha256": "8b8883e63577d787da115c38755de42620a21f31a6f4e87df744e41ff7019fc0",
+      "transformation": "Provenance paths and real-answer token sequences removed; literal/synthetic token IDs and 21 mismatch decisions retained.",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/analysis/tokenizer_boundary_audit.json",
+      "original_sha256": "11309a49839d62ddb27268efe20ade809bdfef8d68897f7eee4c55f465cbf6a6"
+    },
+    {
+      "path": "results/supplementary_20261017/training_manifests.json",
+      "sha256": "1964a06aed7782b32316fa24e25bab9a3abbef8e341ca7768226bf3a13b03aa0",
+      "transformation": "aggregate or numeric-only export"
+    },
+    {
+      "path": "results/supplementary_20261017/verification.json",
+      "sha256": "d57b6d5e151696a6c9c7073ee07026bac5310622f4a5e9df32bf2947faf5af14",
+      "transformation": "aggregate or numeric-only export",
+      "source_file": "artifacts/supplementary_20261017/verified_remote_run/analysis/verification.json",
+      "original_sha256": "b3322dd9471d3de30f5bb0dddf4870186f5e555d2f19125402f4719e2b8128e6"
+    },
+    {
+      "path": "scripts/reproduce_supplementary.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "09b06dd87a28dc95ef517868944b9a2c8f7a8dce6001d2e2cb2efd0f7794eb33"
+    },
+    {
+      "path": "scripts/run_checks.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "fd611bed96e3d52e122d1b2468f1c8f64037b881edaf446acb19bacf995c67d3"
+    },
+    {
+      "path": "scripts/show_results.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "fc17fb0dfb7da2ff0d78b0967b900f1176cba5d4b9b43c15c1b00404c824a6cf"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "738ba7c636b157eb1f148b94f42973d12db720caa32274660f50baf82883a076"
+    },
+    {
+      "path": "tests/test_release.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "ad757337de9613d157f99ffb8fb4b17d7d60662cbe9bcc07c94b2c384579c158"
+    },
+    {
+      "path": "tests/test_supplementary_release.py",
+      "transformation": "Authored release documentation/tooling or preserved historical documentation.",
+      "sha256": "5ef7f32a0c78c3e8abcbb6cd9ee075245c2b17afb4098d3a9076222655fdfd3d"
+    }
+  ],
+  "publication_scope": "All changed/new text files; this manifest excludes its own hash. No deletions."
+}

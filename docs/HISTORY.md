@@ -1,5 +1,11 @@
 # Development history / 演化历程
 
+## Current follow-up through2026-10-17
+
+Native-tail repair, AOnly variants, three-Seed/12-ablation development and the internally preregistered311 evaluation are complete. New supplementary tokenizer, strong-prompt, matched SFT/DPO and Mistral experiments are also complete. Their negative controls limit superiority claims. Start from [current method](METHOD.md) and [current evidence](EXPERIMENTS.md).
+
+## Preserved2026-10-11 history (not current status)
+
 This ledger explains why the source tree contains many dated experiments. It is not a claim that every component is part of one validated final method.
 
 | Stage | Question investigated | Current interpretation |
